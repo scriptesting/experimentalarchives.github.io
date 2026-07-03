@@ -165,7 +165,8 @@ strong {
 }
 
 li strong {
-	color: #a1a1a1;
+	color: #bababa;
+	font-style: italic;
 }
 
 .linked {
