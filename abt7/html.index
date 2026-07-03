@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+
+
+丂匚尺丨卩ㄒ乇丂ㄒ
+by Maddie
+
+
+Dependencies:
+• Favicon → rawpixel.com
+
+
+-->
+        <title>彡</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="content-script-type" content="text/javascript" />
+        <meta http-equiv="content-style-type" content="text/css" />
+        <meta http-equiv="content-language" content="en" />
+        <meta name="author" content="scriptest" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/png" href="assets/favi.png" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="content">
+            <div id="landing">
+                <div id="art">
+                    <img id="bot" src="assets/dev.png" />
+                    <div id="cog1">
+                        <img class="cog rotate1" src="assets/cog.png" />
+                    </div>
+                    <div id="cog2">
+                        <span class="script">script</span>
+                        <span class="est">est.</span>
+                        <img class="cog rotate2" src="assets/cog-black.png" />
+                    </div>
+                </div>
+                <div id="text-section">
+                    <p>
+                        <strong>Hello, I'm Maddie.</strong> I enjoy coding as a side hobby, with a particular interest in front-end development and UX design.
+                    <p></p> My <a href="https://scriptest.github.io" target="_blank" class="linked">GitHub</a> is dedicated to personal projects. <p> I highly recommend <a href="https://www.w3schools.com/" target="_blank" class="linked">W3Schools</a> (CSS, HTML, JavaScript), <a href="https://stackoverflow.com/" target="_blank" class="linked">Stack Overflow</a> (troubleshooting), <br>and <a href="https://codepen.io/pen/" target="_blank" class="linked">CodePen</a> (experimenting). </p>
+                    <p> You can reach me <a href="mailto:maddie.j@outlook.com" class="linked">here</a>. <br>
+                        <br>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
