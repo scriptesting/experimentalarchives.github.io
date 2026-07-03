@@ -6,90 +6,90 @@ by Maddie
 */
 
 body {
-  margin: 0;
-  padding: 0;
-  background: #f2fcff;
+	margin: 0;
+	padding: 0;
+	background: #f2fcff;
 }
 
 a:hover {
-  color: #FF0000;
+	color: #FF0000;
 }
 
 #content {
-  display: grid;
-  place-items: center;
-  height: 100vh;
-  overflow-y: scroll;
+	display: grid;
+	place-items: center;
+	height: 100vh;
+	overflow-y: scroll;
 }
 
 #landing {
-  width: 350px;
-  height: 670px;
-  padding: 20px 50px;
-  background: #fffdfa;
-  -webkit-border-top-left-radius: 30px;
-  -webkit-border-bottom-right-radius: 30px;
-  -moz-border-radius-topleft: 30px;
-  -moz-border-radius-bottomright: 30px;
-  border-top-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  border: 1px solid #d9dae4;
+	width: 350px;
+	height: 560px;
+	padding: 20px 50px;
+	background: #fffdfa;
+	-webkit-border-top-left-radius: 30px;
+	-webkit-border-bottom-right-radius: 30px;
+	-moz-border-radius-topleft: 30px;
+	-moz-border-radius-bottomright: 30px;
+	border-top-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	border: 1px solid #d9dae4;
 }
 
 #art {
-  width: fit-content;
-  margin: 0 auto;
-  position: relative;
-  margin-left: 25px;
-  cursor: default;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+	width: fit-content;
+	margin: 0 auto;
+	position: relative;
+	margin-left: 25px;
+	cursor: default;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 #art #bot {
-  width: 250px;
-  margin-left: 0px;
-  opacity: 0.9;
+	width: 250px;
+	margin-left: 0px;
+	opacity: 0.9;
 }
 
 .cog {
-  width: 100%;
+	width: 100%;
 }
 
 #cog1 {
-  position: absolute;
-  margin: -50px 0px 0px 20px;
-  width: 50px;
-  opacity: 0.6;
+	position: absolute;
+	margin: -50px 0px 0px 20px;
+	width: 50px;
+	opacity: 0.6;
 }
 
 #cog2 {
-  position: absolute;
-  margin: -160px 0px 0px 210px;
-  width: 50px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #1d2943;
-  opacity: 0.9;
+	position: absolute;
+	margin: -160px 0px 0px 210px;
+	width: 50px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #1d2943;
+	opacity: 0.9;
 }
 
 .script {
-  font-size: 42px;
-  font-weight: 900;
-  line-height: 40px;
-  display: block;
+	font-size: 42px;
+	font-weight: 900;
+	line-height: 40px;
+	display: block;
 }
 
 .est {
-  font-size: 17px;
-  line-height: 17px;
-  font-weight: 200;
-  color: #000;
-  font-family: Courier, monospace;
-  padding-left: 1px;
-  margin-top: -3px;
-  margin-left: 100px;
-  display: block;
+	font-size: 17px;
+	line-height: 17px;
+	font-weight: 200;
+	color: #000;
+	font-family: Courier, monospace;
+	padding-left: 1px;
+	margin-top: -3px;
+	margin-left: 100px;
+	display: block;
 }
 
 .rotate1 {
