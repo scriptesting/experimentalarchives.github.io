@@ -12,7 +12,7 @@ body {
 }
 
 a:hover {
-    color: #FF0000;
+    color: #f00;
 }
 
 #content {
@@ -27,10 +27,6 @@ a:hover {
     height: 500px;
     padding: 20px 50px;
     background: #fffdfa;
-    -webkit-border-top-left-radius: 30px;
-    -webkit-border-bottom-right-radius: 30px;
-    -moz-border-radius-topleft: 30px;
-    -moz-border-radius-bottomright: 30px;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
     border: 1px solid #d9dae4;
@@ -49,7 +45,7 @@ a:hover {
 
 #art #bot {
     width: 250px;
-    margin-left: 0px;
+    margin-left: 0;
     opacity: 0.9;
 }
 
@@ -59,14 +55,14 @@ a:hover {
 
 #cog1 {
     position: absolute;
-    margin: -50px 0px 0px 20px;
+    margin: -50px 0 0 20px;
     width: 50px;
     opacity: 0.6;
 }
 
 #cog2 {
     position: absolute;
-    margin: -160px 0px 0px 210px;
+    margin: -160px 0 0 210px;
     width: 50px;
     font-family: Georgia, "Times New Roman", Times, serif;
     color: #1d2943;
@@ -101,16 +97,14 @@ a:hover {
     opacity: 0.9;
     width: 20px;
     position: absolute;
-    margin: -62px 0px 0px 63px;
+    margin: -62px 0 0 63px;
     background: #fff;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
     border-radius: 100px;
 }
 
 @keyframes rotation1 {
     from {
-        transform: rotate(0deg);
+        transform: rotate(0);
     }
 
     to {
@@ -120,7 +114,7 @@ a:hover {
 
 @keyframes rotation2 {
     from {
-        transform: rotate(0deg);
+        transform: rotate(0);
     }
 
     to {
@@ -143,7 +137,7 @@ a:hover {
 
 #text-section ul {
     list-style: none;
-    padding-left: 0px;
+    padding-left: 0;
 }
 
 #text-section li {
@@ -181,57 +175,50 @@ a.linked {
 }
 
 @media screen and (max-width: 500px) {
-    body {
-        background: #f7fff8;
+body {
+    background: #fffdfa;
     }
 
-    #landing {
-        border: 0px;
-        width: 100%;
-        padding: 30px 0px;
-        height: auto;
-        -webkit-border-top-left-radius: 0px;
-        -webkit-border-bottom-right-radius: 0px;
-        -moz-border-radius-topleft: 0px;
-        -moz-border-radius-bottomright: 0px;
-        border-top: 1px solid #d9dae4;
-        border-bottom: 1px solid #d9dae4;
+#landing {
+    border: 0;
+    border-radius: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+#text-section {
+    box-sizing: border-box;
+    padding: 0 12px 20px;
+    display: block;
+    width: 100%;
+}
+
+#art {
+    margin: 0 auto;
+}
+
+#art #bot {
+    width: 200px;
     }
 
-    #art #bot {
-        width: 200px;
-    }
+#cog2 {
+    margin: -140px 0 0 175px;
+}
 
-    #art {
-        margin-left: calc(50% - 120px);
-    }
-
-    #text-section {
-        padding: 0px 30px 20px 30px;
-        display: block;
-        width: auto;
-    }
-
-    #cog2 {
-        margin: -140px 0px 0px 175px;
-    }
-
-    #cog1 {
-        margin: -30px 0px 0px 20px;
-        width: 40px;
+#cog1 {
+    margin: -30px 0 0 20px;
+    width: 40px;
     }
 }
 
 @media screen and (max-height: 700px) and (max-width: 500px) {
-    #content {
-        display: block;
-        height: auto;
-        overflow-y: auto;
-        margin-top: 60px;
-        margin-bottom: 60px;
-    }
-
-    #landing {
-        padding: 20px 0px;
-    }
+#content {
+    display: block;
+    height: auto;
+    overflow-y: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
 }
