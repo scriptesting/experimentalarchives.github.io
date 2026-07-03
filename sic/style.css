@@ -69,14 +69,14 @@ body {
   opacity: 0.9;
 }
 
-.nico {
+.script {
   font-size: 42px;
   font-weight: 900;
   line-height: 40px;
   display: block;
 }
 
-.nicosette {
+.est {
   font-size: 17px;
   line-height: 17px;
   font-weight: 200;
@@ -84,6 +84,7 @@ body {
   font-family: Courier, monospace;
   padding-left: 1px;
   margin-top: -3px;
+  margin-left: 100px;
   display: block;
 }
 
