@@ -188,15 +188,14 @@ body {
     padding: 0;
 }
 
-#text-section {
-    box-sizing: border-box;
-    padding: 0 12px 20px;
+  #text-section {
+    padding: 0 30px 20px 30px;
     display: block;
-    width: 100%;
-}
+    width: auto;
+  }
 
 #art {
-    margin: 0 auto;
+    margin-left: calc(50% - 120px);
 }
 
 #art #bot {
