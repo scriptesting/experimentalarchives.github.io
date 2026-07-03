@@ -11,6 +11,10 @@ body {
   background: #e8e8e8;
 }
 
+a:hover {
+  color: #FF0000;
+}
+
 #content {
   display: grid;
   place-items: center;
