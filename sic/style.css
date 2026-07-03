@@ -93,19 +93,19 @@ a:hover {
 }
 
 .rotate1 {
-  animation: rotation1 18s infinite linear;
+	animation: rotation1 18s infinite linear;
 }
 
 .rotate2 {
-  animation: rotation2 18s infinite linear;
-  opacity: 0.9;
-  width: 20px;
-  position: absolute;
-  margin: -62px 0px 0px 63px;
-  background: #fff;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  border-radius: 100px;
+	animation: rotation2 18s infinite linear;
+	opacity: 0.9;
+	width: 20px;
+	position: absolute;
+	margin: -62px 0px 0px 63px;
+	background: #fff;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
 }
 
 @keyframes rotation1 {
@@ -129,25 +129,25 @@ a:hover {
 }
 
 #text-section {
-  width: 100%;
-  height: auto;
-  background: none;
-  margin-top: 30px;
-  color: #495466;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 19px;
-  letter-spacing: 0.5px;
-  cursor: default;
+	width: 100%;
+	height: auto;
+	background: none;
+	margin-top: 30px;
+	color: #495466;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 19px;
+	letter-spacing: 0.5px;
+	cursor: default;
 }
 
 #text-section ul {
-  list-style: none;
-  padding-left: 0px;
+	list-style: none;
+	padding-left: 0px;
 }
 
 #text-section li {
-  margin-bottom: 15px;
+	margin-bottom: 15px;
 }
 
 ::selection {
@@ -161,27 +161,27 @@ a:hover {
 }
 
 strong {
-  color: #32af12;
+	color: #32af12;
 }
 
 li strong {
-  color: #a1a1a1;
+	color: #a1a1a1;
 }
 
 .linked {
-  color: #50527c;
-  font-weight: 900;
-  text-decoration: none;
+	color: #50527c;
+	font-weight: 900;
+	text-decoration: none;
 }
 
 a.linked {
-  border-bottom: 1px solid #000;
-  cursor: pointer;
+	border-bottom: 1px solid #000;
+	cursor: pointer;
 }
 
 @media screen and (max-width: 500px) {
-  body {
-  background: #f2fcff;
+	body {
+	background: #f2fcff;
   }
 
   #landing {
@@ -227,10 +227,10 @@ a.linked {
     height: auto;
     overflow-y: auto;
     margin-top: 60px;
-    margin-bottom: 60px;
+	margin-bottom: 60px;
   }
 
   #landing {
-    padding: 20px 0px;
+	padding: 20px 0px;
   }
 }
