@@ -213,7 +213,13 @@ body {
 #cog1 {
     margin: -50px 0 0 20px;
 
+#text-section {
+    display: none;
 }
+}
+
+#text-section-m {
+    display: none;
 }
 
 @media screen and (max-height: 700px) and (max-width: 500px) {
@@ -223,4 +229,11 @@ body {
     overflow-y: auto;
     margin: 60px 0;
 }
+
+    #text-section {
+    display: none;
+}
+    
+    #text-section-m {
+    display: block;
 }
