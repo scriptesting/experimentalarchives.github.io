@@ -205,7 +205,6 @@ a.linked {
 }
 
 @media screen and (max-width: 500px) {
-  
 #text-section {
     display: none;
 }
@@ -221,13 +220,11 @@ body {
     width: 100%;
     height: auto;
     padding: 32px 60px 32px 35px;
-    transform: scale(0.95);
-    transform-origin: top center;
 }
   
 #art {
     padding-left: 10px;
-    }
+}
 }
 
 @media screen and (max-height: 700px) and (max-width: 500px) {
@@ -238,9 +235,9 @@ body {
     margin: 60px 0;
 }
   
-    #text-section {
+#text-section {
     display: none;
-    }
+}
 }
 
 #text-section-m {
@@ -250,9 +247,9 @@ body {
 @media screen and (max-width: 500px) {
 #text-section {
     display: none;
-    }
+}
 
 #text-section-m {
     display: block;
-    }
+}
 }
