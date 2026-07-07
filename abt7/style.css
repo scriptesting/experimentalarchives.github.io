@@ -1,7 +1,6 @@
 /**  
 
-丂匚尺丨卩ㄒ乇丂ㄒ
-by Maddie
+Code by Maddie Kahlon
 
 */
 
@@ -15,6 +14,18 @@ a:hover {
     color: #f00;
 }
 
+@font-face {
+    font-family: "Motterdam";
+    src: url("assets/Motterdam.ttf") format("truetype");
+}
+
+.credit {
+    position: fixed;
+    font-family: "Motterdam";
+    left: 10px;
+    bottom: 2px;
+}
+
 #content {
     display: grid;
     place-items: center;
@@ -25,7 +36,7 @@ a:hover {
 #landing {
     width: 350px;
     height: 500px;
-    padding: 20px 50px;
+    padding: 32px 60px 32px 30px;
     background: #fffdfa;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -34,9 +45,8 @@ a:hover {
 
 #art {
     width: fit-content;
-    margin: 0 auto;
+    margin: 0 auto 0 20px;
     position: relative;
-    margin-left: 25px;
     cursor: default;
     -webkit-user-select: none;
     -ms-user-select: none;
@@ -45,7 +55,6 @@ a:hover {
 
 #art #bot {
     width: 250px;
-    margin-left: 0;
     opacity: 0.9;
 }
 
@@ -83,8 +92,7 @@ a:hover {
     color: #000;
     font-family: Courier, monospace;
     padding-left: 1px;
-    margin-top: -3px;
-    margin-left: 100px;
+    margin: -3px 0 0 100px;
     display: block;
 }
 
@@ -126,7 +134,7 @@ a:hover {
     width: 100%;
     height: auto;
     background: none;
-    margin-top: 30px;
+    margin: 30px 0 0 15px;
     color: #495466;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 14px;
@@ -137,7 +145,29 @@ a:hover {
 
 #text-section ul {
     list-style: none;
-    padding-left: 0;
+    padding: 0;
+}
+
+#text-section li {
+    margin-bottom: 15px;
+}
+
+#text-section-m {
+    width: 100%;
+    height: auto;
+    background: none;
+    margin: 30px 0 0 15px;
+    color: #495466;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.5px;
+    cursor: default;
+}
+
+#text-section ul {
+    list-style: none;
+    padding: 0;
 }
 
 #text-section li {
@@ -145,13 +175,13 @@ a:hover {
 }
 
 ::selection {
-    background: #000;
-    color: #fff;
+    background: transparent;
+    color: #00c8ff;
 }
 
 ::-moz-selection {
-    background: #000;
-    color: #fff;
+    background: transparent;
+    color: #00c8ff;
 }
 
 strong {
@@ -175,9 +205,14 @@ a.linked {
 }
 
 @media screen and (max-width: 500px) {
+  
+#text-section {
+    display: none;
+}
+  
 body {
     background: #fffdfa;
-    }
+}
 
 #landing {
     border: 0;
@@ -185,30 +220,13 @@ body {
     box-sizing: border-box;
     width: 100%;
     height: auto;
-    padding: 0;
+    padding: 32px 60px 32px 35px;
+    transform: scale(0.95);
+    transform-origin: top center;
 }
-
-  #text-section {
-    padding: 0 30px 20px 30px;
-    display: block;
-    width: auto;
-  }
-
+  
 #art {
-    margin-left: calc(50% - 125px);
-}
-
-#art #bot {
-    width: 200px;
-    }
-
-#cog2 {
-    margin: -140px 0 0 175px;
-}
-
-#cog1 {
-    margin: -30px 0 0 20px;
-    width: 40px;
+    padding-left: 10px;
     }
 }
 
@@ -217,7 +235,24 @@ body {
     display: block;
     height: auto;
     overflow-y: auto;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    margin: 60px 0;
 }
+  
+    #text-section {
+    display: none;
+    }
+}
+
+#text-section-m {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+#text-section {
+    display: none;
+    }
+
+#text-section-m {
+    display: block;
+    }
 }
