@@ -1036,12 +1036,12 @@ a:hover::before {
 
     #bottomspace {
         height: 0;
-        position: relative;margin-bottom:-80px;
+        position: relative;margin-bottom:-60px;
     }
 
     #copyr {
         position: absolute;
-        top: -28px;
+        top: -15px;
         left: 0;
         width: 100%;
         text-align: center;
