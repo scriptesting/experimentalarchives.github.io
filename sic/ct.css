@@ -989,7 +989,7 @@ a:hover::before {
     #main {
         position: absolute;
         top: 0;
-        left: 56%;
+        left: 56.5%;
         width: 700px;
         margin: 0;
         transform: translateX(-50%) scale(0.76);
@@ -1026,6 +1026,11 @@ a:hover::before {
 		padding: 0 9px 0 5px;
 		margin: -32px 15px 0 92px;
 	}
+  
+    #projects {
+    width: 100%;
+    margin: 50px 0 0 -10px;
+}
 }
 
 @media only screen and (max-width: 430px) {
@@ -1068,11 +1073,17 @@ a:hover::before {
 		margin: -36px 15px 0 99px;
 	}
   
+    
   	.blurb {
 		font-size: 24px;		
 		line-height: 28px;
 	}
   
+  
+  #projects {
+    width: 100%;
+    margin: 50px 0 0 -10px;
+}
 	.prj2 {
 		background: #ff6b6b;
 		padding: 20px 16px 55px;
@@ -1081,6 +1092,7 @@ a:hover::before {
 		line-height: 28px;
 	}
 	
+  
     #main {
         position: absolute;
         top: 0;
