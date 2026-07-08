@@ -988,7 +988,7 @@ a:hover::before {
     #main {
         position: absolute;
         top: 0;
-        left: 56%;
+        left: 57.7%;
         width: 700px;
         margin: 0;
         transform: translateX(-50%) scale(0.76);
@@ -1038,16 +1038,11 @@ a:hover::before {
     #main {
 		position: absolute;
         top: 0;
-        left: 56.6%;
+        left: 57.7%;
         width: 700px;
         margin: 0;
         transform: translateX(-50%) scale(0.58);
         transform-origin: top center;
-    }
-
-    #bottomspace {
-        height: 0;
-        position: relative;
     }
 
 	.prj2 {
