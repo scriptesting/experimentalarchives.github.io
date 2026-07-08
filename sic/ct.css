@@ -1035,21 +1035,26 @@ a:hover::before {
 		font-size: 20px;
     }
 
+ 
+    #train {
+        animation: none !important;
+    }
+  
 	.prj2 {
 		height: 120px;
 	  }
+  
 
-	#main {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        width: 700px;
-        margin: 0;
-        transform: translateX(-50%) scale(0.58);
-        transform-origin: top center;
-    }
-
-    #citybase {
-        margin-left: 0;
-    }
+#main {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 700px;
+    margin: 0;
+    transform: translateX(calc(-50% + 28px)) scale(0.58);
+    transform-origin: top center;
+}
+  
+  
+  
 }
