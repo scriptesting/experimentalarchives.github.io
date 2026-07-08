@@ -1039,7 +1039,6 @@ a:hover::before {
     #bottomspace {
         height: 0;
         position: relative;margin-bottom:-60px;
-		    min-height: 100vh;
     }
 
     #copyr {
