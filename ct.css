@@ -1035,13 +1035,13 @@ a:hover::before {
 		font-size: 20px;
     }
 
-	#main {
-    	position: absolute;
+    #main {
+        position: absolute;
         top: 0;
         left: 50%;
         width: 700px;
-        margin-left: 31px;
-        transform: translateX(-50%) scale(0.65);
+        margin: 0;
+        transform: translateX(calc(-50% + 31px)) scale(0.65);
         transform-origin: top center;
     }
 	
