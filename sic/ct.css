@@ -1033,22 +1033,23 @@ a:hover::before {
 		overflow-y: auto;
 		overflow-x: hidden;
 		font-size: 20px;
-
-		overflow-x: clip;
-        overscroll-behavior-x: none;
     }
 
-    #main {
-        position: relative;
-        top: 0;
-        left: 50%;
-        width: 700px;
-        margin-left: 28px;
-        transform: translateX(-50%) scale(0.58);
-        transform-origin: top center;
-    }
-	
 	.prj2 {
 		height: 120px;
 	  }
+
+	#main {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 700px;
+        margin: 0;
+        transform: translateX(-50%) scale(0.58);
+        transform-origin: top center;
+    }
+
+    #citybase {
+        margin-left: 0;
+    }
 }
