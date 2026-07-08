@@ -989,12 +989,16 @@ a:hover::before {
     #main {
         position: absolute;
         top: 0;
-        left: 56.5%;
+        left: 57.4%;
         width: 700px;
         margin: 0;
         transform: translateX(-50%) scale(0.76);
         transform-origin: top center;
     }
+  
+  #citybase {
+    margin: 199px 0 0 -58px;
+}
 
     #bottomspace {
         height: 0;
@@ -1027,83 +1031,5 @@ a:hover::before {
 		margin: -32px 15px 0 92px;
 	}
   
-    #projects {
-    width: 100%;
-    margin: 50px 0 0 -10px;
 }
-}
-
-@media only screen and (max-width: 430px) {
-    html,
-    body {
-        width: 100%;
-        height: 100%;
-		overflow-x: hidden;
-		overflow-y: auto;
-		font-size: 24px;
-      	line-height: 28px;
-    }
-
-    #bottomspace {
-        height: 0;
-        position: relative;
-		margin-bottom: -20px;
-    }
-
-	.topletter {
-    	font-size: 29px;
-		line-height: 25px;
-	}
-
-	#toptitle {
-		margin: -5px 0 30px;
-}
-	
-    #copyr {
-        position: absolute;
-        top: 20px;
-        left: 0;
-        width: 100%;
-        text-align: center;
-      	font-size: 22px;
-    }
-  
-  .citybase-img {
-		padding: 0 9px 0 5px;
-		margin: -33px 15px 0 99px;
-	}
-  
-    
-  	.blurb {
-		font-size: 24px;		
-		line-height: 28px;
-	}
-  
-  
-  #projects {
-    width: 100%;
-    margin: 50px 0 0 -10px;
-}
-	.prj2 {
-		background: black;
-		padding: 20px 16px 55px;
-		border-radius: 10px;
-		font-size: 24px;
-		line-height: 28px;
-	}
-	
-  
-    #main {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        width: 600px;
-        margin: 0;
-        transform: translateX(-50%) scale(0.56);
-        transform-origin: top center;
-    }
-
-   #citybase {
-    	border-radius: 0;
-	}
 }
