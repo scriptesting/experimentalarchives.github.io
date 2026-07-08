@@ -75,7 +75,7 @@ a:hover::before {
 }
 
 #main {
-    margin: 0 auto;
+    margin: auto;
     width: 600px;
 }
 
@@ -101,13 +101,29 @@ a:hover::before {
 }
 
 #citybase img {
+    padding: 0;
     border: 0;
     max-width: 1.5em;
+    margin-left: -50px;
 }
 
-.citybase-img {
-    padding: 0 9px 0 5px;
- 	margin: -25px 15px 0 72px;
+.aside-img {
+    text-decoration: none;
+    text-align: center;
+    z-index: -1;
+    padding-right: 5px;
+    margin-left: 118px;
+    margin-top: -19px;
+    margin-right: 5px;
+}
+
+.aside-img a {
+    font-weight: normal;
+    color: #000;
+}
+
+.aside-img a:hover {
+    color: #000;
 }
 
 #baseborder {
@@ -125,7 +141,7 @@ a:hover::before {
     font-size: 14px;
     line-height: 14px;
     color: #fff;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 #copyr {
@@ -156,7 +172,7 @@ a:hover::before {
     background: #ff6b6b;
     border: 12px solid #f55858;
     position: absolute;
-    margin: -30px 15px 0 -90px;
+    margin: -30px 15px 0px -90px;
     border-radius: 100px;
     cursor: default;
     transition: all 0.2s ease-in-out;
@@ -176,7 +192,7 @@ a:hover::before {
 
 #toptitle {
     width: 100%;
-    margin: -20px 0 20px;
+    margin: -20px 0 20px 0;
     text-align: center;
     cursor: default;
 }
@@ -195,13 +211,14 @@ a:hover::before {
 #subtitle {
     width: 100%;
     text-align: center;
-    margin-bottom: 25px;
+    margin: 0 0 25px 0;
     display: none;
 }
 
 #projects {
     width: 100%;
-    margin: 50px 0 0 -10px;
+    margin-top: 50px;
+    margin-left: -10px;
 }
 
 .prcage {
@@ -218,7 +235,8 @@ a:hover::before {
 .prcage:hover {
     width: 290px;
     height: 210px;
-	margin: -5px 0 0 -5px;
+    margin-left: -5px;
+    margin-top: -5px;
 }
 
 .prdot1 {
@@ -266,7 +284,7 @@ a:hover::before {
     margin: 0 9px 7px 0;
     float: left;
     background: #ff6b6b;
-    padding: 5px 8px;
+    padding: 5px 8px 5px 8px;
     border-radius: 3px;
     font-size: 13px;
     line-height: 13px;
@@ -304,7 +322,9 @@ a:hover::before {
 
 .prj2 {
     background: #ff6b6b;
- 	margin: 0 auto 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
     padding: 25px 17px 25px 15px;
     width: 98%;
     border-radius: 10px;
@@ -773,7 +793,7 @@ a:hover::before {
     background: #db6767;
     display: block;
     float: left;
-    margin-bottom: 13px;
+    margin: 0 0 13px 0;
 }
 
 .b4window2y {
@@ -782,7 +802,7 @@ a:hover::before {
     background: #d9cd98;
     display: block;
     float: left;
-    margin-bottom: 13px;
+    margin: 0 0 13px 0;
 }
 
 #sl1 {
@@ -979,20 +999,16 @@ a:hover::before {
 }
 
 @media only screen and (max-width: 650px) {
+
     body {
-		overflow-x: hidden;
-		font-size: 20px;    
-		line-height: 21px;
+        overflow-x: hidden;
     }
 
     #main {
-        position: absolute;
-        top: 0;
-        left: 55.7%;
-        width: 700px;
-        margin: 0;
-        transform: translateX(-50%) scale(0.76);
+        width: 600px;
+        transform: scale(0.92) translateX(0);
         transform-origin: top center;
+        margin: 0 auto;
     }
 
     #bottomspace {
@@ -1002,28 +1018,11 @@ a:hover::before {
 
     #copyr {
         position: absolute;
-        top: 10px;
+        top: 0;
         left: 0;
         width: 100%;
         text-align: center;
-        font-size: 20px;
     }
-  
-	.blurb {
-		font-size: 20px;		
-		line-height: 24px;
-	}
-  
-	.prj2 {
-		height: 110px;
-		text-align: center;		
-		line-height: 24px;
-}
-  
-	.citybase-img {
-		padding: 0 9px 0 5px;
-		margin: -33px 15px 0 92px;
-	}
 }
 
 @media only screen and (max-width: 430px) {
@@ -1032,8 +1031,7 @@ a:hover::before {
     body {
         width: 100%;
         height: 100%;
-        overflow: hidden;
-		overflow-y: auto;
+        overflow: hidden;font-size:19px;
     }
 
     #bottomspace {
@@ -1047,14 +1045,27 @@ a:hover::before {
         left: 0;
         width: 100%;
         text-align: center;
+      font-size:19px;
  
     }
   
   .citybase-img {
 		padding: 0 9px 0 5px;
-		margin: -27px 15px 0 129px;
+		margin: -31px 15px 0 142px;
 	}
   
+  
+  	.blurb {
+		font-size: 19px;		
+		line-height: 24px;
+	}
+  
+	.prj2 {
+		height: 110px;
+    margin-top:-12px;
+		text-align: center;		
+		line-height: 24px;
+}
   
     #main {
         position: absolute;
@@ -1062,12 +1073,12 @@ a:hover::before {
         left: 50%;
         width: 600px;
         margin: 0;
-        transform: translateX(-50%) scale(0.6);
+        transform: translateX(-50%) scale(0.56);
         transform-origin: top center;
     }
+
    #citybase {
     border-radius: 0;
 }
-   
 
 }
