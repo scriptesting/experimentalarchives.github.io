@@ -1040,16 +1040,10 @@ a:hover::before {
 	  }
 
 	#main {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        width: 700px;
-        margin: 0;
-        transform: translateX(-50%) scale(0.58);
-        transform-origin: top center;
-    }
-
-    #citybase {
+        position: fixed;
+        
         margin-left: 0;
+        transform: translateX(-50%) scale(0.58);
+        
     }
 }
