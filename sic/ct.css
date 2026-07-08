@@ -767,6 +767,10 @@ a:hover::before {
     z-index: 10;
 }
 
+#citytop {
+    position: relative;
+}
+
 .b4window2 {
     width: 10px;
     height: 8px;
@@ -1024,6 +1028,7 @@ a:hover::before {
 		padding: 0 9px 0 5px;
 		margin: -33px 15px 0 92px;
 	}
+  
 }
 
 @media only screen and (max-width: 430px) {
@@ -1035,15 +1040,30 @@ a:hover::before {
 		font-size: 20px;
     }
 
+  #citytop {
+    position: relative;
+}
+  
 	.prj2 {
 		height: 120px;
 	  }
 
 	#main {
-        position: fixed;
-        
-        margin-left: -1px;
-        transform: translateX(-50%) scale(0.60);
-        
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 700px;
+        margin: 0;
+        transform: translateX(-50%) scale(0.58);
+        transform-origin: top center;
     }
+
+    #citybase {
+        margin-left: 0;
+    }
+  
+   #citytop {
+        margin-left: 50px;
+    }
+  
 }
