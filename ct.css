@@ -1036,7 +1036,7 @@ a:hover::before {
 
     #bottomspace {
         height: 0;
-        position: relative;
+        position: relative;margin-bottom:-60px;
     }
 
     #copyr {
