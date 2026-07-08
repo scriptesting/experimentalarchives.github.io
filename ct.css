@@ -1033,6 +1033,10 @@ a:hover::before {
 		overflow-y: auto;
 		overflow-x: hidden;
 		font-size: 20px;
+
+
+		  overflow-x: clip;
+    overscroll-behavior-x: none;
     }
 
     #main {
@@ -1057,4 +1061,11 @@ a:hover::before {
     #citybase {
         margin-left: 0px;
     }
+	#city {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+  
+}
 }
