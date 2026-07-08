@@ -1027,45 +1027,25 @@ a:hover::before {
 }
 
 @media only screen and (max-width: 430px) {
-    body {
+	body {
 		width: 100%;
 		height: 100%;
 		overflow-y: auto;
 		overflow-x: hidden;
 		font-size: 20px;
-
-
-		  overflow-x: clip;
-    overscroll-behavior-x: none;
     }
 
-    #main {
-		position: absolute;
+	#main {
+    	position: absolute;
         top: 0;
         left: 50%;
         width: 700px;
-        margin: 0;
-        transform: translateX(-50%) scale(0.58);
+        margin-left: 31px;
+        transform: translateX(-50%) scale(0.65);
         transform-origin: top center;
     }
-
-    #bottomspace {
-        height: 0;
-        position: relative;
-    }
-
+	
 	.prj2 {
 		height: 120px;
 	  }
-
-    #citybase {
-        margin-left: 0px;
-    }
-	#city {
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-  
-}
 }
