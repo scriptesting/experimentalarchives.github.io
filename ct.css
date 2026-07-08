@@ -1027,46 +1027,44 @@ a:hover::before {
 }
 
 @media only screen and (max-width: 430px) {
+
     html,
     body {
-		  max-width: 100%;
-        overflow-x: hidden;
-		overflow-y: auto;
-		overflow-x: hidden;
-		font-size: 22px;		
-		line-height: 25px;
-    }
-  
-  	.blurb {
-		font-size: 22px;		
-		line-height: 25px;
-	}
-
-    #main {
-		position: absolute;
-        top: 0;
-        left: 50%;
-        width: 600px;
-        margin: 0;
-        transform: translateX(-50%) scale(0.62);
-        transform-origin: top center;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
     }
 
-   #copyr {
+    #bottomspace {
+        height: 0;
+        position: relative;
+    }
+
+    #copyr {
         position: absolute;
-        top: 10px;
+        top: -15px;
         left: 0;
         width: 100%;
         text-align: center;
-        font-size: 22px;
+ 
     }
-  
-	.prj2 {
-		height: 120px;		line-height: 25px;
-	  }
   
   .citybase-img {
 		padding: 0 9px 0 5px;
-		margin: -36px 15px 0 92px;
+		margin: -27px 15px 0 129px;
 	}
+  
+  
+    #main {
+        position: absolute;
+        top: -20px;
+        left: 50%;
+        width: 600px;
+        margin: 0;
+        transform: translateX(-50%) scale(0.6);
+        transform-origin: top center;
+    }
+
+   
+
 }
