@@ -130,7 +130,7 @@ a:hover::before {
 
 #copyr {
     position: absolute;
-    margin-top: -83px;
+    margin-top: -80px;
     width: 100%;
     text-align: center;
 	font-size: 15px;
@@ -1019,7 +1019,7 @@ a:hover::before {
 		height: 110px;
 		text-align: center;		
 		line-height: 24px;
-		padding: 20px 17px 30px 15px;
+		padding: 20px 17px 30px;
 }
 
 	.citybase-img {
@@ -1047,11 +1047,11 @@ a:hover::before {
 
 	.topletter {
     	font-size: 29px;
-    	line-height: 25px;
+		line-height: 25px;
 	}
 
 	#toptitle {
-    	margin: -20px 0 20px;
+		margin: -5px 0 30px;
 }
 	
     #copyr {
@@ -1075,16 +1075,15 @@ a:hover::before {
   
 	.prj2 {
 		background: #ff6b6b;
-		padding: 20px 17px 55px 15px;
-		width: 98%;
+		padding: 20px 17px 55px;
 		border-radius: 10px;
 		font-size: 24px;
-		line-height: 28px;
+		line-height: 28px
 	}
 	
     #main {
         position: absolute;
-        top: -20px;
+        top: 0;
         left: 50%;
         width: 600px;
         margin: 0;
