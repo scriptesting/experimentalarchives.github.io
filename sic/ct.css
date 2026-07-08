@@ -1054,7 +1054,7 @@ a:hover::before {
         left: 50%;
         width: 700px;
         margin: 0;
-        transform: translateX(-50%) scale(0.58);
+        transform: translateX(-50%) scale(0.61);
         transform-origin: top center;
     }
 
