@@ -1036,13 +1036,13 @@ a:hover::before {
     }
 
     #main {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        width: 700px;
-        margin: 0;
-        transform: translateX(calc(-50% + 31px)) scale(0.65);
-        transform-origin: top center;
+     position: absolute;
+    top: 0;
+    left: 50%;
+    width: 700px;
+    margin: 0;
+    transform: translateX(calc(-50% + 28px)) scale(0.58);
+    transform-origin: top center;
     }
 	
 	.prj2 {
