@@ -1027,35 +1027,29 @@ a:hover::before {
 }
 
 @media only screen and (max-width: 430px) {
-    html,
-    body {
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-      overflow-y: auto;
-      overflow-x: hidden;
+	body {
+		width: 100%;
+		height: 100%;
+		overflow-y: auto;
+		overflow-x: hidden;
+		font-size: 20px;
     }
 
-    #main {
+	.prj2 {
+		height: 120px;
+	  }
+
+	#main {
         position: absolute;
         top: 0;
-        left: 57.7%;
+        left: 50%;
         width: 700px;
         margin: 0;
         transform: translateX(-50%) scale(0.58);
         transform-origin: top center;
     }
 
-    #bottomspace {
-        height: 0;
-        position: relative;
-    }
-
-    #copyr {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        text-align: center;
+    #citybase {
+        margin-left: 0;
     }
 }
