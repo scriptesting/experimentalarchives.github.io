@@ -1035,13 +1035,15 @@ a:hover::before {
         height: 100%;
 		overflow-x: hidden;
 		overflow-y: auto;
-		font-size: 22px;
+		font-size: 24px;
+      		line-height:28px;
     }
 
     #bottomspace {
         height: 0;
         position: relative;
-		margin-bottom: -60px;
+		margin-bottom: -40px;
+
     }
 
 	.topletter {
@@ -1055,28 +1057,29 @@ a:hover::before {
 	
     #copyr {
         position: absolute;
-        top: -3px;
+        top: 8px;
         left: 0;
         width: 100%;
         text-align: center;
-      	font-size: 22px;
+      	font-size: 24px;
     }
   
   .citybase-img {
 		padding: 0 9px 0 5px;
-		margin: -35px 15px 0 99px;
+		margin: -36px 15px 0 105px;
 	}
   
   	.blurb {
-		font-size: 22px;		
-		line-height: 24px;
+		font-size: 24px;		
+		line-height: 28px;
 	}
   
 	.prj2 {
 		background: #ff6b6b;
-		padding: 20px 17px 30px 15px;
+		padding: 20px 17px 55px 15px;
 		width: 98%;
-		border-radius: 10px;
+		border-radius: 10px;		font-size: 24px;
+      		line-height:28px;
 	}
 	
     #main {
