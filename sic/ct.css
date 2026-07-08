@@ -1039,15 +1039,15 @@ a:hover::before {
     }
 
     #main {
-		position: absolute;
+        position: absolute;
         top: 0;
-        left: 57.7%;
+        left: 50%;
         width: 700px;
-        margin: 0;
+        margin-left: 28px;
         transform: translateX(-50%) scale(0.58);
         transform-origin: top center;
     }
-
+	
 	.prj2 {
 		height: 120px;
 	  }
