@@ -1042,8 +1042,8 @@ a:hover::before {
 	#main {
         position: fixed;
         
-        margin-left: 0;
-        transform: translateX(-50%) scale(0.58);
+        margin-left: -1px;
+        transform: translateX(-50%) scale(0.60);
         
     }
 }
