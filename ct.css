@@ -767,6 +767,10 @@ a:hover::before {
     z-index: 10;
 }
 
+#citytop {
+    position: relative;
+}
+
 .b4window2 {
     width: 10px;
     height: 8px;
@@ -988,7 +992,7 @@ a:hover::before {
     #main {
         position: absolute;
         top: 0;
-        left: 57.7%;
+        left: 55.7%;
         width: 700px;
         margin: 0;
         transform: translateX(-50%) scale(0.76);
@@ -1002,7 +1006,7 @@ a:hover::before {
 
     #copyr {
         position: absolute;
-        top: 20px;
+        top: 25px;
         left: 0;
         width: 100%;
         text-align: center;
@@ -1024,6 +1028,7 @@ a:hover::before {
 		padding: 0 9px 0 5px;
 		margin: -33px 15px 0 92px;
 	}
+  
 }
 
 @media only screen and (max-width: 430px) {
@@ -1035,17 +1040,28 @@ a:hover::before {
 		font-size: 20px;
     }
 
-    #main {
-     position: absolute;
-    top: 0;
-    left: 50%;
-    width: 700px;
-    margin: 0;
-    transform: translateX(calc(-50% + 28px)) scale(0.58);
-    transform-origin: top center;
-    }
-	
+  #citytop {
+    position: relative;
+}
+  
 	.prj2 {
 		height: 120px;
 	  }
+
+	#main {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 700px;
+        margin: 0;
+        transform: translateX(-50%) scale(0.61);
+        transform-origin: top center;
+    }
+
+  
+  
+   #citytop {
+        margin-left: 59px;
+    }
+  
 }
