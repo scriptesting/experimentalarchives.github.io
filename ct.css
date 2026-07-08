@@ -1050,7 +1050,15 @@ a:hover::before {
         position: relative;
     }
 
-	  .prj2 {
+	.prj2 {
 		height: 120px;
 	  }
+
+	#main {
+        left: 50%;
+    }
+
+    #citybase {
+        margin-left: 0px;
+    }
 }
