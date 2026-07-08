@@ -1033,6 +1033,9 @@ a:hover::before {
 		overflow-y: auto;
 		overflow-x: hidden;
 		font-size: 20px;
+
+		overflow-x: clip;
+        overscroll-behavior-x: none;
     }
 
     #main {
