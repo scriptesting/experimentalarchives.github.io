@@ -4,313 +4,305 @@ Code by Maddie Kahlon
 
 */
 
-html {
-    -webkit-text-size-adjust: 100%;
-    text-size-adjust: 100%;
-}
-
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    color: #999;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #999;
 }
 
 a {
-    text-decoration: none;
-    color: #666;
+  text-decoration: none;
+  color: #666;
 }
 
 strong {
-    background: #fffedb;
-    font-weight: 500;
+  background: #fffedb;
+  font-weight: 500;
 }
 
 #mailboxcage {
-    position: absolute;
-    right: 355px; 
-    top: 160px;
-    left: 363px;
+  position: absolute;
+  right: 355px;
+  top: 160px;
+  left: 363px;
 }
 
 #mailbox {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 #footer {
-    position: absolute;
-    z-index: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 11px;
-    line-height: 10px;
-    bottom: 5px;
-    left: 0;
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 11px;
+  line-height: 10px;
+  bottom: 5px;
+  left: 0;
 }
 
 #envelope {
-    position: absolute;
-    width: 60px;
-    height: 80px;
-    background: #f1f1f1;
-    border: 1px solid #000;
-    border-radius: 4px;
-    overflow: hidden;
-    box-shadow: 4px 4px 1px #eee;
-    z-index: 10;
+  position: absolute;
+  width: 60px;
+  height: 80px;
+  background: #f1f1f1;
+  border: 1px solid #000;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 4px 4px 1px #eee;
+  z-index: 10;
 }
 
 #middleline {
-    height: 80px;
-    width: 1px;
-    background: #000;
-    position: absolute;
-    margin: 0 0 0 29px;
-    opacity: 0.5;
+  height: 80px;
+  width: 1px;
+  background: #000;
+  position: absolute;
+  margin: 0 0 0 29px;
+  opacity: 0.5;
 }
 
 #intriangle {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    border: 1px solid #000;
-    border-radius: 15px;
-    background: #f1f1f1;
-    margin: -39px 0 0 -1px;
-    transform: rotate(45deg);
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  background: #f1f1f1;
+  margin: -39px 0 0 -1px;
+  transform: rotate(45deg);
 }
 
 #intriangle2 {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    border: 1px solid #000;
-    border-radius: 15px;
-    background: #fff;
-    margin: -39px 0 0 -1px;
-    transform: rotate(45deg);
-    display: none;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  background: #fff;
+  margin: -39px 0 0 -1px;
+  transform: rotate(45deg);
+  display: none;
 }
 
 #whitecover {
-    position: absolute;
-    width: 60px;
-    height: 5px;
-    border-left: 1px solid #000;
-    border-right: 1px solid #000;
-    background: #fff;
-    margin: 0;
-    z-index: 13;
-    display: none;
+  position: absolute;
+  width: 60px;
+  height: 5px;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  background: #fff;
+  margin: 0;
+  z-index: 13;
+  display: none;
 }
 
 #outtriangle {
-    position: absolute;
-    margin: -20px 0 0 5px;
-    width: 50px;
-    height: 50px;
-    border: 1px solid #000;
-    border-radius: 15px;
-    background: #f1f1f1;
-    transform: rotate(45deg);
-    z-index: 8;
-    opacity: 0;
+  position: absolute;
+  margin: -20px 0 0 5px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  background: #f1f1f1;
+  transform: rotate(45deg);
+  z-index: 8;
+  opacity: 0;
 }
 
 #paper {
-    position: absolute;
-    z-index: 9;
-    margin: -15px 0 0;
-    width: 60px;
-    height: 40px;
-    border: 1px solid #000;
-    background: #fff;
-    border-radius: 3px;
-    opacity: 0;
-    overflow: hidden;
+  position: absolute;
+  z-index: 9;
+  margin: -15px 0 0;
+  width: 60px;
+  height: 40px;
+  border: 1px solid #000;
+  background: #fff;
+  border-radius: 3px;
+  opacity: 0;
+  overflow: hidden;
 }
 
 .paperline {
-    width: 40px;
-    height: 1px;
-    background: #ccc;
-    margin: 4px 0 -2px 10px;
+  width: 40px;
+  height: 1px;
+  background: #ccc;
+  margin: 4px 0 -2px 10px;
 }
 
 #bigpapercontainer {
-    position: absolute;
-    margin: -125px 0 0 90px;
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
-    z-index: 99;
+  position: absolute;
+  margin: -125px 0 0 90px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  z-index: 99;
 }
 
 #mailbox:hover #bigpapercontainer {
-    opacity: 1;
-    margin: -130px 0 0 90px;
+  opacity: 1;
+  margin: -130px 0 0 90px;
 }
 
 #bigpaper {
-    border: 1px solid #000;
-    background: #fff;
-    border-radius: 4px;
-    box-shadow: 4px 4px 1px #f1f1f1;
-    overflow: hidden;
-    width: 120px;
-    height: 160px;
+  border: 1px solid #000;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 4px 4px 1px #f1f1f1;
+  overflow: hidden;
+  width: 120px;
+  height: 160px;
 }
 
 #bigpapertext {
-    position: absolute;
-    z-index: 11;
-    margin: 5px 0 0 10px;
-    font-family: Arial, sans-serif;
-    font-size: 10px;
-    line-height: 13px;
-    overflow: hidden;
-    color: #000;
-    width: 100px;
-    height: 140px;
+  position: absolute;
+  z-index: 11;
+  margin: 5px 0 0 10px;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  line-height: 13px;
+  overflow: hidden;
+  color: #000;
+  width: 100px;
+  height: 140px;
 }
 
 .bigpaperline {
-    width: 120px;
-    height: 1px;
-    background: #f1f1f1;
-    margin-top: 7px;
+  width: 120px;
+  height: 1px;
+  background: #f1f1f1;
+  margin-top: 7px;
 }
 
 #coverletter {
-    position: absolute;
-    width: 130px;
-    height: 170px;
-    margin: -125px 0 0 100px;
-    opacity: 0;
+  position: absolute;
+  width: 130px;
+  height: 170px;
+  margin: -125px 0 0 100px;
+  opacity: 0;
 }
 
 #mailbox:hover #outtriangle {
-    opacity: 1;
+  opacity: 1;
 }
 
 #mailbox:hover #intriangle {
-    display: none;
+  display: none;
 }
 
 #mailbox:hover #intriangle2 {
-    display: inline;
+  display: inline;
 }
 
 #mailbox:hover #envelope {
-    border-top: 1px solid #fff;
+  border-top: 1px solid #fff;
 }
 
 #mailbox:hover #paper {
-    opacity: 1;
+  opacity: 1;
 }
 
 #mailbox:hover #whitecover {
-    display: inline;
+  display: inline;
 }
 
 #sect1 {
-    width: 262px;
-    height: 40px;
-    background: #fafafa;
-    border: 1px solid #c9c9c9;
-    position: absolute;
-     margin: 255px 0 0 40px;
-    padding: 7px;
-    box-shadow: 3px 3px 1px #f7f7f7;
+  width: 262px;
+  height: 40px;
+  background: #fafafa;
+  border: 1px solid #c9c9c9;
+  position: absolute;
+  margin: 255px 0 0 40px;
+  padding: 7px;
+  box-shadow: 3px 3px 1px #f7f7f7;
 }
 
 #sect2 {
-    width: 262px;
-    height: 40px;
-    background: #fafafa;
-    border: 1px solid #c9c9c9;
-    position: absolute;
-
-    padding: 7px;
-    box-shadow: 3px 3px 1px #f7f7f7;
-   margin: 345px 0 0 40px;
+  width: 262px;
+  height: 40px;
+  background: #fafafa;
+  border: 1px solid #c9c9c9;
+  position: absolute;
+  padding: 7px;
+  box-shadow: 3px 3px 1px #f7f7f7;
+  margin: 345px 0 0 40px;
 }
 
 #sect3 {
- width: 470px;
-    height: 437px;
-    position: absolute;
- margin: 130px auto 0;
-      position: relative;
-  left: 0px;background:#fafffb;
-  border:1px solid black;
+  width: 470px;
+  height: 437px;
+  position: relative;
+  margin: 130px auto 0;
+  left: 0;
+  background: #fafffb;
+  border: 1px solid black;
 }
 
 #sect4 {
-    position: absolute;
- width: 320px;
-    position: absolute;
-    top: 26px;
+  position: absolute;
+  width: 320px;
+  top: 26px;
   left: 10px;
-    margin: 0;
-
+  margin: 0;
 }
 
 #stylecode,
 #bodycode {
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    font-family: Courier, monospace;
-    font-size: 10px;
-    line-height: 13px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  font-family: Courier, monospace;
+  font-size: 10px;
+  line-height: 13px;
 }
 
-::-webkit-scrollbar { 
-    width: 5px; 
-    height: 7px; 
+::-webkit-scrollbar {
+  width: 5px;
+  height: 7px;
 }
- 
+
 ::-webkit-scrollbar-thumb {
-    background-color: #c6c6c6;
-    border: 0;
+  background-color: #c6c6c6;
+  border: 0;
 }
 
-::-webkit-scrollbar-track-piece { 
-    background-color: transparent;
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
 }
 
 ::selection {
-    background: #fdff97;
+  background: #fdff97;
 }
 
 ::-moz-selection {
-    background: #fdff97;
+  background: #fdff97;
 }
 
 #controls {
-    width: 305px;
-    margin: 0 auto;
-    padding-left: 30px;
+  width: 305px;
+  margin: 0 auto;
+  padding-left: 30px;
 }
 
 .buttonbox {
-    width: 100px;
-    display: block;
-    float: left;
-    margin-bottom: 10px;
+  width: 100px;
+  display: block;
+  float: left;
+  margin-bottom: 10px;
 }
 
 .buttontitle {
-    display: block;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 10px;
-    margin: 5px 0 3px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 10px;
+  margin: 5px 0 3px;
 }
 
 #buttoncage {
-    margin: 0 auto;
-    width: 260px;
+  margin: 0 auto;
+  width: 260px;
 }
 
 #fontf,
@@ -319,143 +311,206 @@ strong {
 #paperf,
 #paperlinesf,
 #shadowf {
-    padding: 3px;
-    background: #fff;
-    width: 70px;
-    font-family: Arial, sans-serif;
-    font-size: 10px;
-    letter-spacing: 1px;
-    display: block;
-    color: #999;
-    border: 1px solid #c9c9c9;
-    outline: none;
-    box-shadow: 3px 3px 1px #f7f7f7;
+  padding: 3px;
+  background: #fff;
+  width: 70px;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  letter-spacing: 1px;
+  display: block;
+  color: #999;
+  border: 1px solid #c9c9c9;
+  outline: none;
+  box-shadow: 3px 3px 1px #f7f7f7;
 }
 
 #textf {
-    border: 1px solid #c9c9c9;
-    padding: 7px;
-    background: #fff5f5;
-    width: 262px;
-    height: 70px;
-    resize: none;
-    font-family: Arial, sans-serif;
-    font-size: 11px;
-    letter-spacing: 0;
-    line-height: 14px;
-    color: #999;
-    margin-bottom: 10px;
-    outline: none;
-    box-shadow: 3px 3px 1px #f7f7f7;
+  border: 1px solid #c9c9c9;
+  padding: 7px;
+  background: #fff5f5;
+  width: 262px;
+  height: 70px;
+  resize: none;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: 0;
+  line-height: 14px;
+  color: #999;
+  margin-bottom: 10px;
+  outline: none;
+  box-shadow: 3px 3px 1px #f7f7f7;
 }
 
 .copydisc {
-    width: 274px;
-    position: absolute;
-    margin: -44px 0 0 -7px;
-    font-size: 11px;
+  width: 274px;
+  position: absolute;
+  margin: -44px 0 0 -7px;
+  font-size: 11px;
 }
 
 .copydisc2 {
-    width: 274px;
-    position: absolute;
-    margin: -31px 0 0 -7px;
-    font-size: 11px;
+  width: 274px;
+  position: absolute;
+  margin: -31px 0 0 -7px;
+  font-size: 11px;
 }
 
 #thn {
-    width: 100px;
-    height: 40px;
-    position: absolute;
-    margin: 420px 0 0;
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  margin: 420px 0 0;
 }
 
 #icarus {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: #f5f5f5;
-    padding: 6px 0;
-    font-size: 11px;
-    line-height: 11px;
-    color: #999;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #f5f5f5;
+  padding: 6px 0;
+  font-size: 11px;
+  line-height: 11px;
+  color: #999;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 #ftt {
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    text-align: center;
-    padding: 5px 0;
-    background: #fff;
-    font-size: 11px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  padding: 5px 0;
+  background: #fff;
+  font-size: 11px;
 }
 
 @media screen and (max-width: 729px) {
-    body {
-        overflow-x: hidden;
-    }
+  body {
+    overflow-x: hidden;
+  }
 
-    #sect3 {
-       width: 70px;
-    height: 300px;
-    padding-top: 0;
+  #sect3 {
+    width: 358px;
+    height: auto;
+    min-height: 0;
     position: relative;
-    left: 50%;
-    top: 0;
-    margin: 170px 0 40px;
-    transform: translateX(-50%);
-    border: 1px solid grey;
-    background: transparent;
-    }
-  
-  #sect3::before {
-    content: "";
-    position: absolute;
-    top: -35px;
-    left: -145px;
-    width: 360px;
-    height: 567px;
-    background: #fafffb;
+    left: auto;
+    top: auto;
+    margin: 135px auto 40px;
+    padding: 35px 0;
+    transform: none;
     border: 1px solid #000;
-    box-sizing: border-box;
-    z-index: -1;
+    background: #fafffb;
+  }
+
+  #mailboxcage {
+    position: relative;
+    left: auto;
+    right: auto;
+    top: auto;
+    width: 62px;
+    height: 82px;
+    margin: 0 auto 45px;
+    z-index: 9999999;
+    display: block;
+  }
+
+  #sect4 {
+    width: 320px;
+    position: relative;
+    left: auto;
+    top: auto;
+    margin: -17px 0 0 35px;
+  }
+
+  #controls {
+    width: 305px;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+
+  #controls form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .buttonbox {
+    width: 95px;
+    display: block;
+    float: none;
+    margin-bottom: 10px;
+  }
+
+  #textf {
+    display: block;
+    flex: none;
+    margin-top: 6px;
+  }
+
+  #sect1,
+  #sect2 {
+    width: 276px;
+    height: auto;
+    min-height: 0;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+
+  #sect1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  #sect2 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .copydisc,
+  .copydisc2 {
+    width: 274px;
+    position: relative;
+    margin: 0 0 10px;
+    font-size: 11px;
+    line-height: 14px;
+  }
+
+  #stylecode,
+  #bodycode {
+    width: 262px;
+    height: 40px;
+    padding: 7px;
+    overflow: auto;
+    background: #fafafa;
+    border: 1px solid #c9c9c9;
+    box-shadow: 3px 3px 1px #f7f7f7;
+    font-family: Courier, monospace;
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  #thn {
+    display: none;
+  }
 }
 
-    #sect4 {
-        width: 320px;
-        position: absolute;
-        margin: 95px 0 0 -145px;
-    }
-
-    #mailboxcage {
-        position: relative;
-        left: 4px;
-        top: 0;
-        right: auto;
-        z-index: 9999999;
-        height: 82px;
-        width: 62px;
-        display: block;
-    }
-
-    #sect1 {
-        margin: 270px 0 0 -105px;
-    }
-
-    #sect2 {
-        margin: 360px 0 0 -105px;
-    }
-
-    .copydisc {
-        font-size: 11px;
-        line-height: 14px;
-        margin: -48px 0 0 -7px;
+@media screen and (max-width: 729px) {
+    #fontf,
+    #bordersf,
+    #envelopef,
+    #paperf,
+    #paperlinesf,
+    #shadowf {
+        width: 60px;
     }
 }
-  
