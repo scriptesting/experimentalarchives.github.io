@@ -190,17 +190,17 @@ a {
     width: 100%;
 }
 
+
 #desc {
     position: absolute;
     width: calc(100% - 45px);
     left: -22px;
     right: 0;
-    bottom: calc(100% + 25px);
-    margin: 0 auto;
+    margin: -45px auto 0;
     box-sizing: border-box;
     text-align: center;
-    border: 0 solid red;
-    font-size: 14px;
+    border: 0px solid red;
+  font-size:14px;
 }
 
 @media (max-width: 560px) {
@@ -226,4 +226,18 @@ a {
     top: 455px;
     bottom: auto;
   }
+   #desc {
+        margin: 0 auto;
+        bottom: calc(100% + 25px);
+    }
 }
+@media (max-width: 526px) {
+  #desc {
+    margin: 0;
+    left: 50%;
+    right: auto;
+    bottom: calc(100% + 25px);
+    transform: translateX(-50%);
+  }
+}
+
