@@ -231,12 +231,12 @@ strong {
 }
 
 #sect3 {
-   width: 720px;
+    width: 840px; /* or whatever width you're using */
     height: 700px;
     position: absolute;
- margin: 60px auto 0;
-      position: relative;
-  left: 50px;
+    top: 50%;
+    left: 50%;
+ transform: translate(calc(-50% + 84px), -25%);
 }
 
 #sect4 {
