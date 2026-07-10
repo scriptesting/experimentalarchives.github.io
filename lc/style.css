@@ -190,17 +190,17 @@ a {
     width: 100%;
 }
 
-
 #desc {
     position: absolute;
     width: calc(100% - 45px);
     left: -22px;
     right: 0;
-    margin: -45px auto 0;
+    bottom: calc(100% + 25px);
+    margin: 0 auto;
     box-sizing: border-box;
     text-align: center;
-    border: 0px solid red;
-  font-size:14px;
+    border: 0 solid red;
+    font-size: 14px;
 }
 
 @media (max-width: 560px) {
