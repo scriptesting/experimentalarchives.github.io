@@ -981,14 +981,18 @@ a:hover::before {
 
 @media only screen and (max-width: 650px) {
     body {
-        overflow-x: hidden;
+		overflow-x: hidden;
+		font-size: 20px;    
+		line-height: 21px;
     }
 
     #main {
         width: 600px;
-        transform: scale(0.92) translateX(0);
+        margin: 0;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%) scale(.76);
         transform-origin: top center;
-        margin: 0 auto;
     }
 
     #bottomspace {
