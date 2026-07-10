@@ -33,7 +33,7 @@ a {
   width: 540px;
   height: 340px;
   position: fixed;
-  left: calc(50% + 5px);
+  left: calc(50% + 7px);
   top: 50%;
   translate: -50% -50%;
   transform-origin: center;
@@ -206,6 +206,7 @@ a {
 @media (max-width: 560px) {
   #main {left: calc(50% + 20px);
     scale: 0.99;
+    left: calc(50% + 2px);
   }
 }
 
@@ -231,7 +232,7 @@ a {
     translate: none;
     height: auto;
     margin: 160px auto 50px;
-    transform: translateX(clamp(0px, calc((100vw - 470px) * 0.18), 10px));
+    transform: translateX(3px);
   }
 
 
