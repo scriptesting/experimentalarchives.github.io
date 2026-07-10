@@ -391,4 +391,60 @@ strong {
     font-size: 11px;
 }
 
+@media screen and (max-width: 729px) {
+    body {
+        overflow: hidden;
+    }
 
+    #sect3 {
+       width: 70px;
+    height: 300px;
+    padding-top: 0;
+    position: relative;
+    left: 50%;
+    top: 0;
+    margin: 170px 0 40px;
+    transform: translateX(-50%);
+    border: 1px solid grey;
+    background: transparent;
+    }
+  
+  #sect3::before {
+    content: "";
+    position: absolute;
+    top: -35px;
+    left: -145px;
+    width: 360px;
+    height: 567px;
+    background: #fafffb;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    z-index: -1;
+}
+
+    #sect4 {
+        width: 320px;
+        position: absolute;
+        margin: 95px 0 0 -145px;
+    }
+
+    #mailboxcage {
+        position: relative;
+        left: 0;
+        top: 0;
+        right: auto;
+        z-index: 9999999;
+        height: 82px;
+        width: 62px;
+        display: block;
+    }
+
+    #sect1 {
+        margin: 270px 0 0 -105px;
+    }
+
+    #sect2 {
+        margin: 360px 0 0 -105px;
+    }
+}
+  
