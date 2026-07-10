@@ -24,8 +24,8 @@ strong {
 #mailboxcage {
     position: absolute;
     right: 355px; 
-    top: 130px;
-    left: 500px;
+    top: 160px;
+    left: 380px;
 }
 
 #mailbox {
@@ -134,10 +134,15 @@ strong {
 
 #bigpapercontainer {
     position: absolute;
-    margin: -125px 0 0 100px;
+    margin: -125px 0 0 85px;
     opacity: 0;
     transition: all 0.5s ease-in-out;
     z-index: 99;
+}
+
+#mailbox:hover #bigpapercontainer {
+    opacity: 1;
+    margin: -130px 0 0 85px;
 }
 
 #bigpaper {
@@ -202,18 +207,13 @@ strong {
     display: inline;
 }
 
-#mailbox:hover #bigpapercontainer {
-    opacity: 1;
-    margin: -130px 0 0 100px;
-}
-
 #sect1 {
     width: 262px;
     height: 40px;
     background: #fafafa;
     border: 1px solid #c9c9c9;
     position: absolute;
-     margin: 227px 0 0 140px;
+     margin: 247px 0 0 40px;
     padding: 7px;
     box-shadow: 3px 3px 1px #f7f7f7;
 }
@@ -227,24 +227,25 @@ strong {
 
     padding: 7px;
     box-shadow: 3px 3px 1px #f7f7f7;
-   margin: 315px 0 0 140px;
+   margin: 339px 0 0 40px;
 }
 
 #sect3 {
-    width: 840px; /* or whatever width you're using */
-    height: 700px;
+ width: 480px;
+    height: 436px;
     position: absolute;
-    top: 45%;
-    left: 50%;
- transform: translate(calc(-50% + 104px), -25%);
+ margin: 130px auto 0;
+      position: relative;
+  left: 0px;background:#f7fff8;
+  border:1px solid black;
 }
 
 #sect4 {
     position: absolute;
  width: 320px;
     position: absolute;
-    top: 0;
-  left: 110px;
+    top: 20px;
+  left: 10px;
     margin: 0;
 
 }
