@@ -205,35 +205,25 @@ a {
 
 @media (max-width: 560px) {
   #main {
-    scale: min(.95, calc((100vw - 20px) / 540px));
+    scale: 0.99;
   }
 }
 
-@media (max-height: 470px) {
+@media (max-width: 526px) {
   body {
-    min-height: 480px;
     overflow-y: auto;
   }
 
   #main {
-    position: absolute;
-    top: 105px;
-    translate: -50% 0;
+    position: relative;
+    left: auto;
+    top: auto;
+    translate: none;
+    height: auto;
+    margin: 130px auto 50px;
   }
 
-  #footer {
-    position: absolute;
-    top: 455px;
-    bottom: auto;
-  }
-   #desc {
-        margin: 0 auto;
-        bottom: calc(100% + 25px);
-    }
-}
-@media (max-width: 526px) {
   #desc {
     bottom: calc(100% + 25px);
   }
 }
-
