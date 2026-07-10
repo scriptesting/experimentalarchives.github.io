@@ -7,7 +7,7 @@ Code by Maddie Kahlon
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     color: #999;
 }
 
@@ -213,7 +213,7 @@ strong {
     background: #fafafa;
     border: 1px solid #c9c9c9;
     position: absolute;
-     margin: 247px 0 0 40px;
+     margin: 255px 0 0 40px;
     padding: 7px;
     box-shadow: 3px 3px 1px #f7f7f7;
 }
@@ -227,7 +227,7 @@ strong {
 
     padding: 7px;
     box-shadow: 3px 3px 1px #f7f7f7;
-   margin: 339px 0 0 40px;
+   margin: 345px 0 0 40px;
 }
 
 #sect3 {
@@ -244,7 +244,7 @@ strong {
     position: absolute;
  width: 320px;
     position: absolute;
-    top: 20px;
+    top: 25px;
   left: 10px;
     margin: 0;
 
@@ -345,17 +345,17 @@ strong {
 }
 
 .copydisc {
-    width: 272px;
+    width: 274px;
     position: absolute;
-    margin: -41px 0 0 -7px;
-    font-size: 10px;
+    margin: -44px 0 0 -7px;
+    font-size: 11px;
 }
 
 .copydisc2 {
-    width: 272px;
+    width: 274px;
     position: absolute;
     margin: -31px 0 0 -7px;
-    font-size: 10px;
+    font-size: 11px;
 }
 
 #thn {
