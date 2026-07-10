@@ -236,7 +236,7 @@ strong {
     position: absolute;
     top: 50%;
     left: 50%;
- transform: translate(calc(-50% + 84px), -25%);
+ transform: translate(calc(-50% + 94px), -25%);
 }
 
 #sect4 {
