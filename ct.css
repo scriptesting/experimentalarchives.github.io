@@ -1,6 +1,7 @@
 /**  
 
-Code by Maddie Kahlon
+丂匚尺丨卩ㄒ乇丂ㄒ
+by Maddie
 
 */
 
@@ -50,16 +51,6 @@ a:hover::before {
     width: 100%;
 }
 
-@font-face {
-    font-family: "Motterdam";
-    src: url("assets/Motterdam.ttf") format("truetype");
-}
-
-.credit {
-    font-family: "Motterdam";
-	font-size: 16px;
-}
-
 ::selection {
  	background: transparent;
     color: #1fff5a;
@@ -75,7 +66,7 @@ a:hover::before {
 }
 
 #main {
-    margin: 0 auto;
+    margin: auto;
     width: 600px;
 }
 
@@ -84,6 +75,16 @@ a:hover::before {
     top: 150px;
     width: 600px;
     height: 200px;
+}
+
+#city img {
+    padding: 0;
+    border: 0;
+    max-width: 1.5em;
+    margin-left: 8px;
+    margin-top: -12px;
+    padding-right: 5px;
+    margin-right: 5px;
 }
 
 #citybase {
@@ -95,19 +96,16 @@ a:hover::before {
     border-radius: 20px;
 }
 
+#citybase img {
+    padding: 0;
+    border: 0;
+    max-width: 1.5em;
+    margin-left: 8px;
+}
+
 #citybase a:hover {
     border-bottom: 1px solid #fff;
     margin-bottom: -1px;
-}
-
-#citybase img {
-    border: 0;
-    max-width: 1.5em;
-}
-
-.citybase-img {
-    padding: 0 9px 0 5px;
- 	margin: -24px 15px 0 73px;
 }
 
 #baseborder {
@@ -125,15 +123,14 @@ a:hover::before {
     font-size: 14px;
     line-height: 14px;
     color: #fff;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 #copyr {
     position: absolute;
-    margin-top: -80px;
+    margin-top: -65px;
     width: 100%;
     text-align: center;
-	font-size: 15px;
 }
 
 .blurb {
@@ -148,6 +145,25 @@ a:hover::before {
     transition: all 0.2s ease-in-out;
 }
 
+.aside-img {
+    text-decoration: none;
+    text-align: center;
+    z-index: -1;
+    padding-right: 5px;
+    margin-left: 108px;
+    margin-top: -19px;
+    margin-right: 5px;
+}
+
+.aside-img a {
+    font-weight: normal;
+    color: #000;
+}
+
+.aside-img a:hover {
+    color: #000;
+}
+
 .blurbicon {
     font-size: 20px;
     line-height: 20px;
@@ -157,7 +173,7 @@ a:hover::before {
     background: #ff6b6b;
     border: 12px solid #f55858;
     position: absolute;
-    margin: -30px 15px 0 -90px;
+    margin: -30px 15px 0px -90px;
     border-radius: 100px;
     cursor: default;
     transition: all 0.2s ease-in-out;
@@ -177,7 +193,7 @@ a:hover::before {
 
 #toptitle {
     width: 100%;
-    margin: -20px 0 20px;
+    margin: -20px 0 20px 0;
     text-align: center;
     cursor: default;
 }
@@ -196,13 +212,14 @@ a:hover::before {
 #subtitle {
     width: 100%;
     text-align: center;
-    margin-bottom: 25px;
+    margin: 0 0 25px 0;
     display: none;
 }
 
 #projects {
     width: 100%;
-    margin: 50px 0 0 -10px;
+    margin-top: 50px;
+    margin-left: -10px;
 }
 
 .prcage {
@@ -219,7 +236,8 @@ a:hover::before {
 .prcage:hover {
     width: 290px;
     height: 210px;
-	margin: -5px 0 0 -5px;
+    margin-left: -5px;
+    margin-top: -5px;
 }
 
 .prdot1 {
@@ -267,7 +285,7 @@ a:hover::before {
     margin: 0 9px 7px 0;
     float: left;
     background: #ff6b6b;
-    padding: 5px 8px;
+    padding: 5px 8px 5px 8px;
     border-radius: 3px;
     font-size: 13px;
     line-height: 13px;
@@ -305,7 +323,9 @@ a:hover::before {
 
 .prj2 {
     background: #ff6b6b;
- 	margin: 0 auto 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
     padding: 25px 17px 25px 15px;
     width: 98%;
     border-radius: 10px;
@@ -774,7 +794,7 @@ a:hover::before {
     background: #db6767;
     display: block;
     float: left;
-    margin-bottom: 13px;
+    margin: 0 0 13px 0;
 }
 
 .b4window2y {
@@ -783,7 +803,7 @@ a:hover::before {
     background: #d9cd98;
     display: block;
     float: left;
-    margin-bottom: 13px;
+    margin: 0 0 13px 0;
 }
 
 #sl1 {
@@ -980,25 +1000,17 @@ a:hover::before {
 }
 
 @media only screen and (max-width: 650px) {
+
     body {
-		overflow-x: hidden;
-		font-size: 20px;    
-		line-height: 21px;
+        overflow-x: hidden;
     }
 
     #main {
-        position: absolute;
-        top: 0;
-        left: 57.4%;
-        width: 700px;
-        margin: 0;
-        transform: translateX(-50%) scale(0.76);
+        width: 600px;
+        transform: scale(0.92) translateX(0);
         transform-origin: top center;
+        margin: 0 auto;
     }
-  
-  #citybase {
-    margin: 199px 0 0 -52px;
-}
 
     #bottomspace {
         height: 0;
@@ -1007,29 +1019,43 @@ a:hover::before {
 
     #copyr {
         position: absolute;
-        top: 25px;
+        top: 0;
         left: 0;
         width: 100%;
         text-align: center;
-        font-size: 20px;
     }
-  
-	.blurb {
-		font-size: 20px;		
-		line-height: 24px;
-	}
-  
-	.prj2 {
-		height: 110px;
-		text-align: center;		
-		line-height: 24px;
-		padding: 20px 17px 30px;
 }
 
-	.citybase-img {
-		padding: 0 9px 0 5px;
-		margin: -32px 15px 0 92px;
-	}
-  
-}
+@media only screen and (max-width: 430px) {
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    #main {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 600px;
+        margin: 0;
+        transform: translateX(-50%) scale(0.55);
+        transform-origin: top center;
+    }
+
+    #bottomspace {
+        height: 0;
+        position: relative;
+    }
+
+    #copyr {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
 }
