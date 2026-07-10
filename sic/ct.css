@@ -5,7 +5,7 @@ Code by Maddie Kahlon
 */
 
 body {
-	margin: 0;
+    margin: 0;
     background: #ffdee5;
     font-size: 15px;
     font-family: 'Exo 2', Verdana, sans-serif;
@@ -57,16 +57,16 @@ a:hover::before {
 
 .credit {
     font-family: "Motterdam";
-	font-size: 16px;
+    font-size: 16px;
 }
 
 ::selection {
- 	background: transparent;
+    background: transparent;
     color: #1fff5a;
 }
 
 ::-moz-selection {
- 	background: transparent;
+    background: transparent;
     color: #1fff5a;
 }
 
@@ -107,7 +107,7 @@ a:hover::before {
 
 .citybase-img {
     padding: 0 9px 0 5px;
- 	margin: -24px 15px 0 73px;
+    margin: -24px 15px 0 73px;
 }
 
 #baseborder {
@@ -133,7 +133,7 @@ a:hover::before {
     margin-top: -80px;
     width: 100%;
     text-align: center;
-	font-size: 15px;
+    font-size: 15px;
 }
 
 .blurb {
@@ -219,7 +219,7 @@ a:hover::before {
 .prcage:hover {
     width: 290px;
     height: 210px;
-	margin: -5px 0 0 -5px;
+    margin: -5px 0 0 -5px;
 }
 
 .prdot1 {
@@ -305,7 +305,7 @@ a:hover::before {
 
 .prj2 {
     background: #ff6b6b;
- 	margin: 0 auto 50px;
+    margin: 0 auto 50px;
     padding: 25px 17px 25px 15px;
     width: 98%;
     border-radius: 10px;
@@ -544,7 +544,7 @@ a:hover::before {
 
 #b2 {
     position: absolute;
-	margin: 0 0 0 440px;
+    margin: 0 0 0 440px;
     z-index: 8;
 }
 
@@ -735,7 +735,7 @@ a:hover::before {
 }
 
 #b4windowcage {
-    position: absolute;
+	position: absolute;
     margin: 16px 0 0 15px;
     width: 50px;
     height: 180px;
@@ -932,7 +932,7 @@ a:hover::before {
 
 #train {
     position: absolute;
-	margin: 0 0 0 -300px;
+    margin: 0 0 0 -300px;
     width: 300px;
     padding: 10px 0 10px 20px;
     background: #f55858;
@@ -981,9 +981,9 @@ a:hover::before {
 
 @media only screen and (max-width: 724px) {
     body {
-		overflow-x: hidden;
-		font-size: 20px;    
-		line-height: 21px;
+        overflow-x: hidden;
+        font-size: 20px;
+        line-height: 21px;
     }
 
     #main {
@@ -1003,30 +1003,30 @@ a:hover::before {
         text-align: center;
         font-size: 20px;
     }
-  
-	.blurb {
-		font-size: 20px;		
-		line-height: 24px;
-	}
-  
-	.prj2 {
-		height: 110px;
-		text-align: center;		
-		line-height: 24px;
-		padding: 20px 17px 30px 15px;
-}
 
-	.citybase-img {
-		padding: 0 9px 0 5px;
-		margin: -32px 15px 0 92px;
-	}
+    .blurb {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .prj2 {
+        height: 110px;
+        text-align: center;
+        line-height: 24px;
+        padding: 20px 17px 30px 15px;
+    }
+
+    .citybase-img {
+        padding: 0 9px 0 5px;
+        margin: -32px 15px 0 92px;
+    }
 }
 
 @media only screen and (max-width: 550px) {
     body {
-		overflow-x: hidden;
-		font-size: 20px;    
-		line-height: 21px;
+        overflow-x: hidden;
+        font-size: 20px;
+        line-height: 21px;
     }
 
     #main {
@@ -1047,30 +1047,30 @@ a:hover::before {
         font-size: 20px;
     }
 
-  
-	.blurb {
-		font-size: 20px;		
-		line-height: 24px;
-	}
-  
-	.prj2 {
-		height: 110px;
-		text-align: center;		
-		line-height: 24px;
-		padding: 20px 17px 30px 15px;
-}
 
-	.citybase-img {
-		padding: 0 9px 0 5px;
-		margin: -32px 15px 0 92px;
-	}
+    .blurb {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .prj2 {
+        height: 110px;
+        text-align: center;
+        line-height: 24px;
+        padding: 20px 17px 30px 15px;
+    }
+
+    .citybase-img {
+        padding: 0 9px 0 5px;
+        margin: -32px 15px 0 92px;
+    }
 }
 
 @media only screen and (max-width: 469px) {
     body {
-		overflow-x: hidden;
-		font-size: 20px;    
-		line-height: 21px;
+        overflow-x: hidden;
+        font-size: 20px;
+        line-height: 21px;
     }
 
     #main {
@@ -1082,9 +1082,8 @@ a:hover::before {
         transform-origin: top center;
     }
 
-   
 
-       #copyr {
+    #copyr {
         position: absolute;
         top: -1px;
         left: 0;
@@ -1092,30 +1091,30 @@ a:hover::before {
         text-align: center;
         font-size: 20px;
     }
-  
-	.blurb {
-		font-size: 20px;		
-		line-height: 24px;
-	}
-  
-	.prj2 {
-		height: 110px;
-		text-align: center;		
-		line-height: 24px;
-		padding: 20px 17px 30px 15px;
-}
 
-	.citybase-img {
-		padding: 0 9px 0 5px;
-		margin: -32px 15px 0 92px;
-	}
+    .blurb {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .prj2 {
+        height: 110px;
+        text-align: center;
+        line-height: 24px;
+        padding: 20px 17px 30px 15px;
+    }
+
+    .citybase-img {
+        padding: 0 9px 0 5px;
+        margin: -32px 15px 0 92px;
+    }
 }
 
 @media only screen and (max-width: 440px) {
     body {
-		overflow-x: hidden;
-		font-size: 20px;    
-		line-height: 21px;
+        overflow-x: hidden;
+        font-size: 20px;
+        line-height: 21px;
     }
 
     #main {
@@ -1135,23 +1134,23 @@ a:hover::before {
         text-align: center;
         font-size: 20px;
     }
-  
-	.blurb {
-		font-size: 20px;		
-		line-height: 24px;
-	}
-  
-	.prj2 {
-		height: 110px;
-		text-align: center;		
-		line-height: 24px;
-		padding: 20px 17px 30px 15px;
-}
 
-	.citybase-img {
-		padding: 0 9px 0 5px;
-		margin: -32px 15px 0 92px;
-	}
+    .blurb {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .prj2 {
+        height: 110px;
+        text-align: center;
+        line-height: 24px;
+        padding: 20px 17px 30px 15px;
+    }
+
+    .citybase-img {
+        padding: 0 9px 0 5px;
+        margin: -32px 15px 0 92px;
+    }
 }
 
 
@@ -1160,55 +1159,55 @@ a:hover::before {
     body {
         width: 100%;
         height: 100%;
-		overflow-x: hidden;
-		overflow-y: auto;
-		font-size: 24px;
-      	line-height: 28px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        font-size: 24px;
+        line-height: 28px;
     }
 
     #bottomspace {
         height: 0;
         position: relative;
-		margin-bottom: -20px;
+        margin-bottom: -20px;
     }
 
-	.topletter {
-    	font-size: 29px;
-		line-height: 25px;
-	}
+    .topletter {
+        font-size: 29px;
+        line-height: 25px;
+    }
 
-	#toptitle {
-		margin: -5px 0 30px;
-}
-	
+    #toptitle {
+        margin: -5px 0 30px;
+    }
+
     #copyr {
         position: absolute;
         top: 20px;
         left: 0;
         width: 100%;
         text-align: center;
-      	font-size: 22px;
+        font-size: 22px;
     }
-  
-  .citybase-img {
-		padding: 0 9px 0 5px;
-		margin: -33px 15px 0 99px;
-	}
-  
-  	.blurb {
-		font-size: 24px;		
-		line-height: 28px;
-	}
-  
-	.prj2 {
-		background: #ff6b6b;
-		padding: 20px 17px 55px 15px;
-		width: 98%;
-		border-radius: 10px;
-		font-size: 24px;
-		line-height: 28px;
-	}
-	
+
+    .citybase-img {
+        padding: 0 9px 0 5px;
+        margin: -33px 15px 0 99px;
+    }
+
+    .blurb {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .prj2 {
+        background: #ff6b6b;
+        padding: 20px 17px 55px 15px;
+        width: 98%;
+        border-radius: 10px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
     #main {
         position: absolute;
         top: 0;
@@ -1219,19 +1218,19 @@ a:hover::before {
         transform-origin: top center;
     }
 
-  #citybase {
-    	border-radius: 0;
-     width: calc(100vw / 0.56);
-	}
-  
-  #citybase::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -100vw;
-    width: 100vw;
-    background: #f55858;
-    z-index: -1;
-}
+    #citybase {
+        border-radius: 0;
+        width: calc(100vw / 0.56);
+    }
+
+    #citybase::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -100vw;
+        width: 100vw;
+        background: #f55858;
+        z-index: -1;
+    }
 }
