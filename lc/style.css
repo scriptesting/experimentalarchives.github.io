@@ -33,9 +33,9 @@ a {
   width: 540px;
   height: 340px;
   position: fixed;
-  left: calc(50% + 7px);
+  left: 50%;
   top: 50%;
-  translate: -50% -50%;
+  translate: calc(-50% + 5px) -50%;
   transform-origin: center;
 }
 
@@ -50,8 +50,6 @@ a {
   cursor: default;
   outline:
 }
-
-
 
 #footer {
   position: fixed;
@@ -177,82 +175,40 @@ a {
   display: none;
 }
 
-#main {
-    width: min(540px, 95vw);
-}
-
-#lcsa,
-#latin {
-    width: calc(50% - 10px);
-}
-
 #title {
-    width: 100%;
+    position: absolute;
+    left: 0;
+    width: 540px;
+    margin-top: -100px;
+    text-align: center;
+    font-size: 45px;
+    letter-spacing: 2px;
+    font-family: 'Waiting for the Sunrise', sans-serif;
+    cursor: default;
 }
-
 
 #desc {
     position: absolute;
-    width: calc(100% - 45px);
-    left: -22px;
-    right: 0;
-    margin: -45px auto 0;
-    box-sizing: border-box;
+    left: -10px;
+    width: 540px;
+    margin-top: -45px;
     text-align: center;
-    border: 0px solid red;
-  font-size:14px;
+    letter-spacing: 1px;
 }
 
+#lcsa {
+    float: left;
+    width: 260px;
+    height: 340px;
+}
+
+#latin {
+    float: right;
+    width: 260px;
+    height: 340px;
+}
 @media (max-width: 560px) {
   #main {
- 
-    scale: 0.99;
-    left: calc(50% + 6px);
-  }
-}
-
-@media (max-width: 540px) {
-  #main {
- 
-    scale: 0.99;
-    left: calc(50% + 20px);
-  }
-}
-
-@media (max-width: 526px) {
-  
-  
-  body {
-    overflow-y: auto;
-  }
-
- #lcsa,
-  #latin {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    justify-content: center;
-    height: auto;
-  }
-    
- #main {
-    position: relative;
-    left: auto;
-    top: auto;
-    translate: none;
-    height: auto;
-    margin: 160px auto 50px;
-    transform: translateX(3px);
-  }
-
-
-  #desc {
-    bottom: calc(100% + 25px);
-  }
-}
-
-@media (max-width: 454px) {
-  #main {
-    padding-bottom: 40px;
+    scale: min(.95, calc((100vw - 20px) / 540px));
   }
 }
