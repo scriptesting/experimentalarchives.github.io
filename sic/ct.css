@@ -1153,7 +1153,6 @@ a:hover::before {
     }
 }
 
-
 @media only screen and (max-width: 400px) {
     html,
     body {
@@ -1165,10 +1164,14 @@ a:hover::before {
         line-height: 28px;
     }
 
-    #bottomspace {
-        height: 0;
-        position: relative;
-        margin-bottom: -20px;
+	#main {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 600px;
+        margin: 0;
+        transform: translateX(-50%) scale(0.56);
+        transform-origin: top center;
     }
 
     .topletter {
@@ -1189,11 +1192,12 @@ a:hover::before {
         font-size: 22px;
     }
 
-    .citybase-img {
-        padding: 0 9px 0 5px;
-        margin: -33px 15px 0 99px;
+	#bottomspace {
+        height: 0;
+        position: relative;
+        margin-bottom: -20px;
     }
-
+	
     .blurb {
         font-size: 24px;
         line-height: 28px;
@@ -1208,29 +1212,21 @@ a:hover::before {
         line-height: 28px;
     }
 
-    #main {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        width: 600px;
-        margin: 0;
-        transform: translateX(-50%) scale(0.56);
-        transform-origin: top center;
-    }
+#citybase {
+    border-radius: 0;
+}
 
-    #citybase {
-        border-radius: 0;
-        width: calc(100vw / 0.56);
-    }
+#citybase::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
 
-    #citybase::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: -100vw;
-        width: 100vw;
-        background: #f55858;
-        z-index: -1;
-    }
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
+
+    background: #f55858;
+    z-index: -1;
+}
 }
