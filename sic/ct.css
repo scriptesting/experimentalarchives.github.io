@@ -979,7 +979,7 @@ a:hover::before {
     }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 724px) {
     body {
 		overflow-x: hidden;
 		font-size: 20px;    
@@ -987,12 +987,11 @@ a:hover::before {
     }
 
     #main {
-        position: absolute;
-        top: 0;
-        left: 56.5%;
-        width: 700px;
+        width: 600px;
         margin: 0;
-        transform: translateX(-50%) scale(0.76);
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%) scale(.76);
         transform-origin: top center;
     }
 
@@ -1019,21 +1018,161 @@ a:hover::before {
 		height: 110px;
 		text-align: center;		
 		line-height: 24px;
-		padding: 20px 17px 30px;
+		padding: 20px 17px 30px 15px;
 }
 
 	.citybase-img {
 		padding: 0 9px 0 5px;
 		margin: -32px 15px 0 92px;
 	}
-  
-    #projects {
-    width: 100%;
-    margin: 50px 0 0 -10px;
-}
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 550px) {
+    body {
+		overflow-x: hidden;
+		font-size: 20px;    
+		line-height: 21px;
+    }
+
+    #main {
+        width: 600px;
+        margin: 0;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%) scale(.65);
+        transform-origin: top center;
+    }
+
+    #bottomspace {
+        height: 0;
+        position: relative;
+    }
+
+    #copyr {
+        position: absolute;
+        top: 25px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+    }
+  
+	.blurb {
+		font-size: 20px;		
+		line-height: 24px;
+	}
+  
+	.prj2 {
+		height: 110px;
+		text-align: center;		
+		line-height: 24px;
+		padding: 20px 17px 30px 15px;
+}
+
+	.citybase-img {
+		padding: 0 9px 0 5px;
+		margin: -32px 15px 0 92px;
+	}
+}
+
+@media only screen and (max-width: 469px) {
+    body {
+		overflow-x: hidden;
+		font-size: 20px;    
+		line-height: 21px;
+    }
+
+    #main {
+        width: 600px;
+        margin: 0;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%) scale(.6);
+        transform-origin: top center;
+    }
+
+    #bottomspace {
+        height: 0;
+        position: relative;
+    }
+
+    #copyr {
+        position: absolute;
+        top: 25px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+    }
+  
+	.blurb {
+		font-size: 20px;		
+		line-height: 24px;
+	}
+  
+	.prj2 {
+		height: 110px;
+		text-align: center;		
+		line-height: 24px;
+		padding: 20px 17px 30px 15px;
+}
+
+	.citybase-img {
+		padding: 0 9px 0 5px;
+		margin: -32px 15px 0 92px;
+	}
+}
+
+@media only screen and (max-width: 440px) {
+    body {
+		overflow-x: hidden;
+		font-size: 20px;    
+		line-height: 21px;
+    }
+
+    #main {
+        width: 600px;
+        margin: 0;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%) scale(.55);
+        transform-origin: top center;
+    }
+
+    #bottomspace {
+        height: 0;
+        position: relative;
+    }
+
+    #copyr {
+        position: absolute;
+        top: 25px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+    }
+  
+	.blurb {
+		font-size: 20px;		
+		line-height: 24px;
+	}
+  
+	.prj2 {
+		height: 110px;
+		text-align: center;		
+		line-height: 24px;
+		padding: 20px 17px 30px 15px;
+}
+
+	.citybase-img {
+		padding: 0 9px 0 5px;
+		margin: -32px 15px 0 92px;
+	}
+}
+
+
+@media only screen and (max-width: 400px) {
     html,
     body {
         width: 100%;
@@ -1070,29 +1209,23 @@ a:hover::before {
   
   .citybase-img {
 		padding: 0 9px 0 5px;
-		margin: -36px 15px 0 99px;
+		margin: -33px 15px 0 99px;
 	}
   
-    
   	.blurb {
 		font-size: 24px;		
 		line-height: 28px;
 	}
   
-  
-  #projects {
-    width: 100%;
-    margin: 50px 0 0 -10px;
-}
 	.prj2 {
 		background: #ff6b6b;
-		padding: 20px 16px 55px;
+		padding: 20px 17px 55px 15px;
+		width: 98%;
 		border-radius: 10px;
 		font-size: 24px;
 		line-height: 28px;
 	}
 	
-  
     #main {
         position: absolute;
         top: 0;
@@ -1103,7 +1236,19 @@ a:hover::before {
         transform-origin: top center;
     }
 
-   #citybase {
+  #citybase {
     	border-radius: 0;
+     width: calc(100vw / 0.56);
 	}
+  
+  #citybase::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -100vw;
+    width: 100vw;
+    background: #f55858;
+    z-index: -1;
+}
 }
