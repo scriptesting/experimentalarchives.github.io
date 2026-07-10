@@ -4,6 +4,11 @@ Code by Maddie Kahlon
 
 */
 
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -445,6 +450,17 @@ strong {
 
     #sect2 {
         margin: 360px 0 0 -105px;
+    }
+  
+      #textf {
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    .copydisc {
+        font-size: 11px;
+        line-height: 14px;
+        margin: -48px 0 0 -7px;
     }
 }
   
