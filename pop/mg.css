@@ -393,7 +393,7 @@ strong {
 
 @media screen and (max-width: 729px) {
     body {
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     #sect3 {
