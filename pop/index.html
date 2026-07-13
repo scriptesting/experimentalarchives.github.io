@@ -1,129 +1,517 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <!--
-
+/**  
 
 Code by Maddie Kahlon
 
+*/
 
-Attributions:
-• Favicon → PxHere
-• JavaScript Color Picker → jscolor
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #999;
+}
 
+a {
+  text-decoration: none;
+  color: #666;
+}
 
--->
-        <title>彡</title>
-        <meta charset="UTF-8">
-        <link rel="icon" type="image/png" href="assets/favi.png">
-        <link href="mg.css" rel="stylesheet">
-       <meta content="width=device-width, initial-scale=0.8" name="viewport">
-    </head>
-    <body onclick="test(); cod()" onkeypress="test(); cod()" onkeyup="test(); cod()" onmousemove="test(); cod()">
-        <div id="interface">
-            <div id="mailboxcage">
-                <div id="mailbox">
-                    <div id="whitecover"></div>
-                    <div id="envelope">
-                        <div id="middleline"></div>
-                        <div id="intriangle"></div>
-                        <div id="intriangle2"></div>
-                    </div>
-                    <div id="outtriangle"></div>
-                    <div id="paper">
-                        <div class="paperline"></div>
-                        <div class="paperline"></div>
-                        <div class="paperline"></div>
-                    </div>
-                    <div id="bigpapercontainer">
-                        <div id="bigpaper">
-                            <div id="bigpapertext"> Type your letter text here. Note: If your message is too long, it will be clipped. </div>
-                            <div class="bigpaperline"></div>
-                            <div class="bigpaperline"></div>
-                            <div class="bigpaperline"></div>
-                            <div class="bigpaperline"></div>
-                            <div class="bigpaperline"></div>
-                            <div class="bigpaperline"></div>
-                            <div class="bigpaperline"></div>
-                            <div class="bigpaperline"></div>
-                            <div class="bigpaperline"></div>
-                            <div class="bigpaperline"></div>
-                            <div class="bigpaperline"></div>
-                            <div class="bigpaperline"></div>
-                            <div class="bigpaperline"></div>
-                            <div class="bigpaperline"></div>
-                            <div class="bigpaperline"></div>
-                            <div class="bigpaperline"></div>
-                            <div class="bigpaperline"></div>
-                            <div class="bigpaperline"></div>
-                            <div class="bigpaperline"></div>
-                        </div>
-                    </div>
-                </div>
-                <div id="coverletter"></div>
-            </div>
-            <div id="coral-set">
-                <div id="controls">
-                    <form>
-                        <div class="buttonbox">
-                            <div class="buttontitle"> Font </div>
-                            <input class="jscolor" id="fontf" name="fontf" type="text" value="#000000">
-                        </div>
-                        <div class="buttonbox">
-                            <div class="buttontitle"> Borders </div>
-                            <input class="jscolor" id="bordersf" name="bordersf" type="text" value="#000000">
-                        </div>
-                        <div class="buttonbox">
-                            <div class="buttontitle"> Envelope </div>
-                            <input class="jscolor" id="envelopef" name="envelopef" type="text" value="#F1F1F1">
-                        </div>
-                        <div class="buttonbox">
-                            <div class="buttontitle"> Paper </div>
-                            <input class="jscolor" id="paperf" name="paperf" type="text" value="#FFFFFF">
-                        </div>
-                        <div class="buttonbox">
-                            <div class="buttontitle"> Paper Line </div>
-                            <input class="jscolor" id="paperlinesf" name="paperlinesf" type="text" value="#F1F1F1">
-                        </div>
-                        <div class="buttonbox">
-                            <div class="buttontitle"> Shadow </div>
-                            <input class="jscolor" id="shadowf" name="shadowf" type="text" value="#F1F1F1">
-                        </div>
-                        <textarea id="coral-txt">Type your letter text here. Note: If your message is too long, it will be clipped.</textarea>
-                    </form>
-                </div>
-            </div>
-            <div id="txt1-set">
-                <div class="txt1"> Click once in the grey box to select the code, then copy and paste it above the <strong>&lt;/style&gt;</strong> tag in your own code. </div>
-                <div id="stylecode"> #mailboxcage &lcub; position: fixed; bottom: 22px; left: 32px; z-index: 9999999; height: 82px; width: 62px; display: block; &rcub; <br>
-                    <br> #mailbox &lcub; cursor: pointer; &rcub; <br>
-                    <br> #envelope &lcub; position: absolute; width: 60px; height: 80px; background: #F1F1F1; border-left: 1px solid #000000; border-right: 1px solid #000000; border-bottom: 1px solid #000000; border-top: 1px solid #000000; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; overflow: hidden; box-shadow: 4px 4px 1px #F1F1F1; z-index: 10; &rcub; <br>
-                    <br> #middleline &lcub; height: 80px; width: 1px; background:#000000; position: absolute; margin: 0 0 0 29px; opacity: 0.5; &rcub; <br>
-                    <br> #intriangle &lcub; position: absolute; width: 60px; height: 60px; border: 1px solid #000000; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; background: #F1F1F1; margin: -39px 0 0 -1px; -ms-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); &rcub; <br>
-                    <br> #outtriangle &lcub; position: absolute; margin:-20px 0 0 5px; width: 50px; height: 50px; border: 1px solid #000000; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; background: #F1F1F1; -ms-transform: rotate(45deg); -webkit-transform: rotate(45deg); transform: rotate(45deg); z-index: 8; opacity: 0; &rcub; <br>
-                    <br> #paper &lcub; position: absolute; z-index: 9; margin:-15px 0 0 0; width: 60px; height: 40px; border: 1px solid #000000; background: #FFFFFF; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; opacity: 0; overflow: hidden; &rcub; <br>
-                    <br> .paperline &lcub; width: 40px; height: 1px; background:#F1F1F1; margin: 4px 0 -2px 10px; &rcub; <br>
-                    <br> #bigpapercontainer &lcub; position: absolute; margin:-125px 0 0 100px; opacity: 0; transition: all 0.5s ease-in-out; &rcub; <br>
-                    <br> #bigpaper &lcub; border: 1px solid #000000; background: #FFFFFF; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; box-shadow: 4px 4px 1px #F1F1F1; overflow: hidden; width: 120px; height: 160px; &rcub; <br>
-                    <br> #bigpapertext &lcub; position: absolute; z-index: 11; margin: 5px 0 0 10px; font-family: arial; font-size: 10px; line-height: 13px; overflow: hidden; color: #000000; width: 100px; height: 140px; &rcub; <br>
-                    <br> .bigpaperline &lcub; width: 120px; height: 1px; background: #F1F1F1; margin-top: 7px; &rcub; <br>
-                    <br> #coverletter &lcub; position: absolute; width: 130px; height: 170px; margin: -125px 0 0 100px; opacity: 0; &rcub; <br>
-                    <br> #mailbox: hover #outtriangle &lcub; opacity: 1; &rcub; <br>
-                    <br> #mailbox: hover #intriangle &lcub; background: #FFFFFF; margin: -43px 0 0 -1px; border-radius: 20px; &rcub; <br>
-                    <br> #mailbox: hover #envelope &lcub; border-top: 1px solid #FFFFFF; &rcub; <br>
-                    <br> #mailbox: hover #paper &lcub; opacity: 1; &rcub; <br>
-                    <br> #mailbox: hover #bigpapercontainer &lcub; opacity: 1; margin: -130px 0 0 100px; &rcub;
-                </div>
-            </div>
-            <div id="txt2-set">
-                <div class="txt2"> Then, copy and paste this above the <strong>&lt;/body&gt;</strong> tag. Done!</div>
-                <div id="bodycode"> &lt;div id&equals;"mailboxcage"&gt; <br> &lt;div id&equals;"mailbox"&gt; <br> &lt;div id&equals;"envelope"&gt; <br> &lt;div id&equals;"middleline"&gt;&lt;/div&gt; <br> &lt;div id&equals;"intriangle"&gt;&lt;/div&gt; <br> &lt;/div&gt; <br> &lt;div id&equals;"outtriangle"&gt;&lt;/div&gt; <br> &lt;div id&equals;"paper"&gt; <br> &lt;div class&equals;"paperline"&gt;&lt;/div&gt; <br> &lt;div class&equals;"paperline"&gt;&lt;/div&gt; <br> &lt;div class&equals;"paperline"&gt;&lt;/div&gt; <br> &lt;/div&gt; <br> &lt;div id&equals;"bigpapercontainer"&gt; <br> &lt;div id&equals;"bigpaper"&gt; <br> &lt;div id&equals;"bigpapertext"&gt;Type your letter text here. Note: If your message is too long, it will be clipped.&lt;/div&gt; <br> &lt;div class&equals;"bigpaperline"&gt;&lt;/div&gt; <br> &lt;div class&equals;"bigpaperline"&gt;&lt;/div&gt; <br> &lt;div class&equals;"bigpaperline"&gt;&lt;/div&gt; <br> &lt;div class&equals;"bigpaperline"&gt;&lt;/div&gt; <br> &lt;div class&equals;"bigpaperline"&gt;&lt;/div&gt; <br> &lt;div class&equals;"bigpaperline"&gt;&lt;/div&gt; <br> &lt;div class&equals;"bigpaperline"&gt;&lt;/div&gt; <br> &lt;div class&equals;"bigpaperline"&gt;&lt;/div&gt; <br> &lt;div class&equals;"bigpaperline"&gt;&lt;/div&gt; <br> &lt;div class&equals;"bigpaperline"&gt;&lt;/div&gt; <br> &lt;div class&equals;"bigpaperline"&gt;&lt;/div&gt; <br> &lt;div class&equals;"bigpaperline"&gt;&lt;/div&gt; <br> &lt;div class&equals;"bigpaperline"&gt;&lt;/div&gt; <br> &lt;div class&equals;"bigpaperline"&gt;&lt;/div&gt; <br> &lt;div class&equals;"bigpaperline"&gt;&lt;/div&gt; <br> &lt;div class&equals;"bigpaperline"&gt;&lt;/div&gt; <br> &lt;div class&equals;"bigpaperline"&gt;&lt;/div&gt; <br> &lt;div class&equals;"bigpaperline"&gt;&lt;/div&gt; <br> &lt;div class&equals;"bigpaperline"&gt;&lt;/div&gt; <br> &lt;/div&gt; <br> &lt;/div&gt; <br> &lt;/div&gt; <br> &lt;div id&equals;"coverletter"&gt;&lt;/div&gt; <br> &lt;/div&gt; </div>
-            </div>
-            <div id="thn"></div>
-        </div>
-        <div id="icarus"> Mail Pop-Up Generator </div>
-        <div id="ftt"></div>
-        <script src="mg.js"></script>
-        <script src="jscolor.js"></script>
-    </body>
-</html>
+strong {
+  background: #fffedb;
+  font-weight: 500;
+}
+
+#mailboxcage {
+  position: absolute;
+  right: 355px;
+  top: 160px;
+  left: 363px;
+}
+
+#mailbox {
+  cursor: pointer;
+}
+
+#footer {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 11px;
+  line-height: 10px;
+  bottom: 5px;
+  left: 0;
+}
+
+#envelope {
+  position: absolute;
+  width: 60px;
+  height: 80px;
+  background: #f1f1f1;
+  border: 1px solid #000;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 4px 4px 1px #eee;
+  z-index: 10;
+}
+
+#middleline {
+  height: 80px;
+  width: 1px;
+  background: #000;
+  position: absolute;
+  margin: 0 0 0 29px;
+  opacity: 0.5;
+}
+
+#intriangle {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  background: #f1f1f1;
+  margin: -39px 0 0 -1px;
+  transform: rotate(45deg);
+}
+
+#intriangle2 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  background: #fff;
+  margin: -39px 0 0 -1px;
+  transform: rotate(45deg);
+  display: none;
+}
+
+#whitecover {
+  position: absolute;
+  width: 60px;
+  height: 5px;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  background: #fff;
+  margin: 0;
+  z-index: 13;
+  display: none;
+}
+
+#outtriangle {
+  position: absolute;
+  margin: -20px 0 0 5px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #000;
+  border-radius: 15px;
+  background: #f1f1f1;
+  transform: rotate(45deg);
+  z-index: 8;
+  opacity: 0;
+}
+
+#paper {
+  position: absolute;
+  z-index: 9;
+  margin: -15px 0 0;
+  width: 60px;
+  height: 40px;
+  border: 1px solid #000;
+  background: #fff;
+  border-radius: 3px;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.paperline {
+  width: 40px;
+  height: 1px;
+  background: #ccc;
+  margin: 4px 0 -2px 10px;
+}
+
+#bigpapercontainer {
+  position: absolute;
+  margin: -125px 0 0 90px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  z-index: 99;
+}
+
+#mailbox:hover #bigpapercontainer {
+  opacity: 1;
+  margin: -130px 0 0 90px;
+}
+
+#bigpaper {
+  border: 1px solid #000;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 4px 4px 1px #f1f1f1;
+  overflow: hidden;
+  width: 120px;
+  height: 160px;
+}
+
+#bigpapertext {
+  position: absolute;
+  z-index: 11;
+  margin: 5px 0 0 10px;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  line-height: 13px;
+  overflow: hidden;
+  color: #000;
+  width: 100px;
+  height: 140px;
+}
+
+.bigpaperline {
+  width: 120px;
+  height: 1px;
+  background: #f1f1f1;
+  margin-top: 7px;
+}
+
+#coverletter {
+  position: absolute;
+  width: 130px;
+  height: 170px;
+  margin: -125px 0 0 100px;
+  opacity: 0;
+}
+
+#mailbox:hover #outtriangle {
+  opacity: 1;
+}
+
+#mailbox:hover #intriangle {
+  display: none;
+}
+
+#mailbox:hover #intriangle2 {
+  display: inline;
+}
+
+#mailbox:hover #envelope {
+  border-top: 1px solid #fff;
+}
+
+#mailbox:hover #paper {
+  opacity: 1;
+}
+
+#mailbox:hover #whitecover {
+  display: inline;
+}
+
+#controls {
+  width: 305px;
+  margin: 0 auto;
+  padding-left: 30px;
+}
+
+.buttonbox {
+  width: 100px;
+  display: block;
+  float: left;
+  margin-bottom: 10px;
+}
+
+.buttontitle {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 10px;
+  margin: 5px 0 3px;
+}
+
+#buttoncage {
+  margin: 0 auto;
+  width: 260px;
+}
+
+#fontf,
+#bordersf,
+#envelopef,
+#paperf,
+#paperlinesf,
+#shadowf {
+  padding: 3px;
+  background: #fff;
+  width: 70px;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  letter-spacing: 1px;
+  display: block;
+  color: #999;
+  border: 1px solid #c9c9c9;
+  outline: none;
+  box-shadow: 3px 3px 1px #f7f7f7;
+}
+
+#interface {
+  width: 470px;
+  height: 437px;
+  position: relative;
+  margin: 130px auto 0;
+  left: 0;
+  background: #fafffb;
+  border: 1px solid black;
+}
+
+#coral-txt {
+  border: 1px solid #c9c9c9;
+  padding: 7px;
+  background: #fff5f5;
+  width: 262px;
+  height: 70px;
+  resize: none;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: 0;
+  line-height: 14px;
+  color: #999;
+  margin-bottom: 10px;
+  outline: none;
+  box-shadow: 3px 3px 1px #f7f7f7;
+  margin-top: 6px;
+}
+
+#coral-set {
+  position: absolute;
+  width: 320px;
+  top: 16px;
+  left: 10px;
+  margin: 0;
+}
+
+#txt1-set {
+  width: 262px;
+  height: 40px;
+  background: #fafafa;
+  border: 1px solid #c9c9c9;
+  position: absolute;
+  margin: 255px 0 0 40px;
+  padding: 7px;
+  box-shadow: 3px 3px 1px #f7f7f7;
+}
+
+#txt2-set {
+  width: 262px;
+  height: 40px;
+  background: #fafafa;
+  border: 1px solid #c9c9c9;
+  position: absolute;
+  padding: 7px;
+  box-shadow: 3px 3px 1px #f7f7f7;
+  margin: 345px 0 0 40px;
+}
+
+.txt1 {
+  width: 274px;
+  position: absolute;
+  margin: -45px 0 0 -7px;
+  font-size: 11px;
+}
+
+.txt2 {
+  width: 274px;
+  position: absolute;
+  margin: -31px 0 0 -7px;
+  font-size: 11px;
+}
+
+#stylecode,
+#bodycode {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  font-family: Courier, monospace;
+  font-size: 10px;
+  line-height: 13px;
+}
+
+#thn {
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  margin: 420px 0 0;
+}
+
+#icarus {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #f5f5f5;
+  padding: 6px 0;
+  font-size: 11px;
+  line-height: 11px;
+  color: #999;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#ftt {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  padding: 5px 0;
+  background: #fff;
+  font-size: 11px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c6c6c6;
+  border: 0;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+}
+
+::selection {
+  background: #fdff97;
+}
+
+::-moz-selection {
+  background: #fdff97;
+}
+
+@media screen and (max-width: 729px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  #mailboxcage {
+    position: relative;
+    left: auto;
+    right: auto;
+    top: auto;
+    width: 62px;
+    height: 82px;
+    margin: 0 auto 45px;
+    z-index: 9999999;
+    display: block;
+  }
+  
+#controls {
+    width: 305px;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+
+  #controls form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .buttonbox {
+    width: 95px;
+    display: block;
+    float: none;
+    margin-bottom: 10px;
+  }
+  
+      #fontf,
+    #bordersf,
+    #envelopef,
+    #paperf,
+    #paperlinesf,
+    #shadowf {
+        width: 60px;
+    }
+  
+  #interface {
+    width: 358px;
+    height: auto;
+    min-height: 0;
+    position: relative;
+    left: auto;
+    top: auto;
+    margin: 135px auto 40px;
+    padding: 35px 0;
+    transform: none;
+    border: 1px solid #000;
+    background: #fafffb;
+  }
+  
+#coral-txt {
+    display: block;
+    flex: none;
+    margin-top: 6px;
+  }
+
+#coral-set {
+    width: 320px;
+    position: relative;
+    left: auto;
+    top: auto;
+    margin: -17px 0 0 32px;
+  }
+  
+  #txt1-set,
+  #txt2-set {
+    width: 276px;
+    height: auto;
+    min-height: 0;
+    position: relative;
+    left: -1px;
+    margin-right: auto;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+
+  #txt1-set {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  #txt2-set {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .txt1,
+  .txt2 {
+    width: 274px;
+    position: relative;
+    margin: 0 0 10px;
+    margin-left: 1px;
+    font-size: 11px;
+    line-height: 14px;
+  }
+
+  #stylecode,
+  #bodycode {
+    width: 262px;
+    height: 35px;
+    padding: 3px 7px 7px 7px;
+    overflow: auto;
+    background: #fafafa;
+    border: 1px solid #c9c9c9;
+    box-shadow: 3px 3px 1px #f7f7f7;
+    font-family: Courier, monospace;
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  #thn {
+    display: none;
+  }
+  
+}
