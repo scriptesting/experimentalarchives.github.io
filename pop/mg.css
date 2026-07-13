@@ -24,7 +24,7 @@ strong {
 #mailboxcage {
   position: absolute;
   right: 355px;
-  top: 160px;
+  top: 180px;
   left: 363px;
 }
 
@@ -254,7 +254,7 @@ strong {
 
 #interface {
   width: 470px;
-  height: 437px;
+  height: 448px;
   position: relative;
   margin: 130px auto 0;
   left: 0;
@@ -283,7 +283,7 @@ strong {
 #coral-set {
   position: absolute;
   width: 320px;
-  top: 16px;
+  top: 28px;
   left: 10px;
   margin: 0;
 }
@@ -294,7 +294,7 @@ strong {
   background: #fafafa;
   border: 1px solid #c9c9c9;
   position: absolute;
-  margin: 255px 0 0 40px;
+  margin: 266px 0 0 40px;
   padding: 7px;
   box-shadow: 3px 3px 1px #f7f7f7;
 }
@@ -307,7 +307,7 @@ strong {
   position: absolute;
   padding: 7px;
   box-shadow: 3px 3px 1px #f7f7f7;
-  margin: 345px 0 0 40px;
+  margin: 356px 0 0 40px;
 }
 
 .txt1 {
@@ -332,28 +332,6 @@ strong {
   font-family: Courier, monospace;
   font-size: 10px;
   line-height: 13px;
-}
-
-::-webkit-scrollbar {
-  width: 5px;
-  height: 7px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #c6c6c6;
-  border: 0;
-}
-
-::-webkit-scrollbar-track-piece {
-  background-color: transparent;
-}
-
-::selection {
-  background: #fdff97;
-}
-
-::-moz-selection {
-  background: #fdff97;
 }
 
 #thn {
@@ -389,6 +367,28 @@ strong {
   font-size: 11px;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c6c6c6;
+  border: 0;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+}
+
+::selection {
+  background: #fdff97;
+}
+
+::-moz-selection {
+  background: #fdff97;
+}
+
 @media screen and (max-width: 729px) {
   body {
     overflow-x: hidden;
@@ -405,8 +405,8 @@ strong {
     z-index: 9999999;
     display: block;
   }
-  
-#controls {
+
+  #controls {
     width: 305px;
     margin: 0 auto;
     padding-left: 0;
@@ -424,16 +424,16 @@ strong {
     float: none;
     margin-bottom: 10px;
   }
-  
-      #fontf,
-    #bordersf,
-    #envelopef,
-    #paperf,
-    #paperlinesf,
-    #shadowf {
-        width: 60px;
-    }
-  
+
+  #fontf,
+  #bordersf,
+  #envelopef,
+  #paperf,
+  #paperlinesf,
+  #shadowf {
+    width: 60px;
+  }
+
   #interface {
     width: 358px;
     height: auto;
@@ -447,21 +447,21 @@ strong {
     border: 1px solid #000;
     background: #fafffb;
   }
-  
-#coral-txt {
+
+  #coral-txt {
     display: block;
     flex: none;
     margin-top: 6px;
   }
 
-#coral-set {
+  #coral-set {
     width: 320px;
     position: relative;
     left: auto;
     top: auto;
     margin: -17px 0 0 32px;
   }
-  
+
   #txt1-set,
   #txt2-set {
     width: 276px;
@@ -499,8 +499,8 @@ strong {
   #stylecode,
   #bodycode {
     width: 262px;
-    height: 40px;
-    padding: 7px;
+    height: 35px;
+    padding: 3px 7px 7px 7px;
     overflow: auto;
     background: #fafafa;
     border: 1px solid #c9c9c9;
@@ -513,5 +513,5 @@ strong {
   #thn {
     display: none;
   }
-  
+
 }
