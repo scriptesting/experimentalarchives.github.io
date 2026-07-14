@@ -7,11 +7,11 @@ Code by Maddie Kahlon
 body {
     margin: 0;
     padding: 0;
-    background: #f7fff8;
+    background: #e8e8e8;
 }
 
 a:hover {
-    color: #f00;
+    color: #F00;
 }
 
 @font-face {
@@ -30,17 +30,17 @@ a:hover {
     display: grid;
     place-items: center;
     height: 100vh;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 #landing {
     width: 350px;
     height: 500px;
     padding: 32px 60px 32px 30px;
-    background: #fffdfa;
+    background: #f4f4f4;
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    border: 1px solid #d9dae4;
+    border: 1px solid #D9DAE4;
 }
 
 #art {
@@ -74,7 +74,7 @@ a:hover {
     margin: -160px 0 0 210px;
     width: 50px;
     font-family: Georgia, "Times New Roman", Times, serif;
-    color: #1d2943;
+    color: #1D2943;
     opacity: 0.9;
 }
 
@@ -106,7 +106,7 @@ a:hover {
     width: 20px;
     position: absolute;
     margin: -62px 0 0 63px;
-    background: #fff;
+    background: #FFF;
     border-radius: 100px;
 }
 
@@ -131,14 +131,14 @@ a:hover {
 }
 
 #text-section {
-    width: 100%;
+    width: 98%;
     height: auto;
     background: none;
     margin: 30px 0 0 15px;
     color: #495466;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 14px;
-    line-height: 19px;
+    line-height: 19.5px;
     letter-spacing: 0.5px;
     cursor: default;
 }
@@ -154,25 +154,25 @@ a:hover {
 
 ::selection {
     background: transparent;
-    color: #00c8ff;
+    color: #00C8FF;
 }
 
 ::-moz-selection {
     background: transparent;
-    color: #00c8ff;
+    color: #00C8FF;
 }
 
 strong {
-    color: #32af12;
+    color: #32AF12;
 }
 
 li strong {
-    color: #bababa;
+    color: #BABABA;
     font-style: italic;
 }
 
 .linked {
-    color: #50527c;
+    color: #50527C;
     font-weight: 900;
     text-decoration: none;
 }
@@ -183,58 +183,48 @@ a.linked {
 }
 
 @media screen and (max-width: 500px) {
-body {
-    background: #fffdfa;
+    body {
+        background: #FFFDFA;
     }
 
-#landing {
-    border: 0;
-    border-radius: 0;
-    box-sizing: border-box;
-    width: 100%;
-    height: auto;
-    padding: 0;
-}
+    #landing {
+        border: 0;
+        border-radius: 0;
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
 
-  #text-section {
-    padding: 0 30px 20px;
-    display: block;
-    width: auto;
-  }
+    #text-section {
+        padding: 0 30px 20px;
+        display: block;
+        width: auto;
+    }
 
-#art {
-    margin-left: calc(50% - 170px);
-}
+    #art {
+        margin-left: calc(50% - 160px);
+    }
 
-#cog2 {
-    margin: -160px 0 0 210px;
-}
+    #art #bot {
+        width: 200px;
+    }
 
-#cog1 {
-    margin: -50px 0 0 20px;
+    #cog2 {
+        margin: -140px 0 0 175px;
+    }
 
-#text-section {
-    display: none;
-}
-}
-
-#text-section-m {
-    display: none;
+    #cog1 {
+        margin: -30px 0 0 20px;
+        width: 40px;
+    }
 }
 
 @media screen and (max-height: 700px) and (max-width: 500px) {
-#content {
-    display: block;
-    height: auto;
-    overflow-y: auto;
-    margin: 60px 0;
-}
-
-    #text-section {
-    display: none;
-}
-    
-    #text-section-m {
-    display: block;
-}
+    #content {
+        display: block;
+        height: auto;
+        overflow-y: auto;
+        margin: 60px 0;
+    }
 }
