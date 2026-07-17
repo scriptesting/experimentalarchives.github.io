@@ -30,13 +30,14 @@ a {
 }
 
 #main {
-    width: 540px;
-    height: 340px;
-    position: fixed;
-    left: calc(50% + 7px);
-    top: 50%;
-    translate: -50% -50%;
-    transform-origin: center;
+    position: relative;
+    left: auto;
+    top: auto;
+    translate: none;
+    width: 95vw;
+    height: auto;
+    margin: 140px auto 0;
+    transform: none;
 }
 
 #title {
@@ -212,26 +213,29 @@ a {
     opacity: 1;
 }
 
-@media (max-width: 560px) {
-    #main {
-        scale: 0.99;
-        left: calc(50% + 6px);
-    }
-}
 
-@media (max-width: 540px) {
-    #main {
-        scale: 0.99;
-        left: calc(50% + 20px);
-    }
-}
 
 @media (max-width: 526px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
     body {
         overflow-y: auto;
     }
 
-    .tooltip {
+    #main {
+        position: relative;
+        top: auto;
+        translate: none;
+        width: 95vw;
+        height: auto;
+        margin: 140px auto 0;
+        transform: none;
+    }
+
+        .tooltip {
         position: fixed;
         inset: -3vh auto auto 50%;
         transform: translateX(-50%);
@@ -257,15 +261,6 @@ a {
         justify-content: center;
         height: auto;
         margin-top: 20px;
-    }
-
-    #main {
-        position: relative;
-        left: auto;
-        top: auto;
-        translate: none;
-        height: auto;
-        margin: 140px auto 0;
     }
 
     #desc {
